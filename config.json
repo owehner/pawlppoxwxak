@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "allowed_origins": [
+    "https://your-frontend-website.com",
+    "https://bb.yourdomain.com",
+    "http://localhost:3000"
+  ],
+  "domains": {
+    "gdflix": [
+      "https://gdflix.dev",
+      "https://new3.gdflix.io",
+      "https://gdflix.net"
+    ],
+    "hubcloud": [
+      "https://hubcloud.cx",
+      "https://hubcloud.club",
+      "https://hubcloud.ninja"
+    ]
+  },
+  "dummy_response": {
+    "enabled": true,
+    "fake_streams": [
+      {
+        "server": "buzz",
+        "name": "Buzz FSL Direct [Fast]",
+        "url": "https://cdn.lenin.buzz/sample.stream.mkv?token=expired_session_auth_0918239128",
+        "type": "direct_video"
+      },
+      {
+        "server": "r2_10gbps",
+        "name": "10Gbps Cloudflare R2",
+        "url": "https://demo.r2.cloudflarestorage.com/hub/sample-demo-video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Expires=300",
+        "type": "direct_video"
+      }
+    ]
+  }
+}
