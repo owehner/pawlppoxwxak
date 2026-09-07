@@ -7,14 +7,13 @@
   ],
   "domains": {
     "gdflix": [
-      "https://gdflix.dev",
       "https://new3.gdflix.io",
+      "https://gdflix.dev",
       "https://gdflix.net"
     ],
     "hubcloud": [
       "https://hubcloud.cx",
-      "https://hubcloud.club",
-      "https://hubcloud.ninja"
+      "https://hubcloud.one"
     ]
   },
   "dummy_response": {
