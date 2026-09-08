@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e02",
+      "title": "Bigg Boss Season 20 Episode 2",
+      "season": 20,
+      "episode": 2,
+      "date": "08 Sep 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 2.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "df0nmeygku7asye",
+          "GDFlix-stream": "PGUwaMqprEGPcTc"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "rkke7keikmnbsr7",
+          "GDFlix-stream": "H189zNzipDBN28I"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "aqrbp1ggznxbnbn",
+          "GDFlix-stream": "IwatCRwS23MKF0W"
+        }
+      },
+      "HubCloud-stream": "df0nmeygku7asye",
+      "GDFlix-stream": "PGUwaMqprEGPcTc"
+    },
+    {
       "id": "bb-s20-e01",
       "title": "BBHin Grand Premiere: Vardaan ya Toofan?",
       "season": 20,
