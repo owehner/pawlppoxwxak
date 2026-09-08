@@ -134,40 +134,27 @@ HOTSTAR_GUEST_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ7XCJoSWRcIjpcImFmOTVlYzJh
 def fetch_hotstar_metadata():
     """
     Fetches official episode metadata (titles, descriptions, HD thumbnails) from JioHotstar.
-    Method 1: Direct Hotstar BFF API (instant, high accuracy).
-    Method 2: Next.js SSR SEO crawl (Googlebot user-agent fallback).
+    Uses curl with modern TLS/HTTP2 and auto-decompression to query Hotstar's official BFF API.
     """
+    import subprocess
     episodes = {}
     global HOTSTAR_GUEST_TOKEN
 
-    # Method 1: Official BFF API
+    cmd = [
+        "curl", "-s", "--compressed",
+        "-H", f"x-hs-usertoken: {HOTSTAR_GUEST_TOKEN}",
+        "-H", "x-hs-device-id: 3a061e-110c3c-15d9ae-1a600a",
+        "-H", "x-hs-platform: web",
+        "-H", "x-country-code: in",
+        "-H", "accept-language: eng",
+        "-H", "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        HOTSTAR_BFF_API
+    ]
+
     try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
-            "x-hs-usertoken": HOTSTAR_GUEST_TOKEN,
-            "x-hs-device-id": "3a061e-110c3c-15d9ae-1a600a",
-            "x-hs-platform": "web",
-            "x-country-code": "in",
-            "accept-language": "eng",
-            "Accept-Encoding": "identity",
-            "X-Forwarded-For": "49.36.0.1",
-            "X-Real-IP": "49.36.0.1"
-        }
-        req = urllib.request.Request(HOTSTAR_BFF_API, headers=headers)
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            # Token auto-renewal
-            for k, v in resp.headers.items():
-                if "sessionuserup=" in v.lower():
-                    m_tok = re.search(r'sessionUserUP=([^;]+)', v)
-                    if m_tok:
-                        HOTSTAR_GUEST_TOKEN = m_tok.group(1)
-
-            raw = resp.read()
-            if raw[:2] == b'\x1f\x8b' or resp.headers.get("Content-Encoding") == "gzip":
-                import gzip
-                raw = gzip.decompress(raw)
-
-            data = json.loads(raw.decode("utf-8"))
+        p = subprocess.run(cmd, capture_output=True, text=True, timeout=15)
+        if p.returncode == 0 and p.stdout:
+            data = json.loads(p.stdout)
             items = data.get("success", {}).get("widget_wrapper", {}).get("widget", {}).get("data", {}).get("items", [])
             for it in items:
                 d = it.get("playable_content", {}).get("data", {})
@@ -201,22 +188,16 @@ def fetch_hotstar_metadata():
     except Exception as e:
         print(f"[*] Hotstar BFF API note: {repr(e)}, checking SSR fallback...")
 
-    # Method 2: Googlebot Next.js SSR Fallback
+    # Method 2: Googlebot Next.js SSR Fallback via curl
     try:
-        req = urllib.request.Request(
-            HOTSTAR_SHOW_URL,
-            headers={
-                "User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
-                "Accept-Encoding": "identity"
-            }
-        )
-        with urllib.request.urlopen(req, timeout=12) as resp:
-            raw = resp.read()
-            if raw[:2] == b'\x1f\x8b' or resp.headers.get("Content-Encoding") == "gzip":
-                import gzip
-                raw = gzip.decompress(raw)
-            html = raw.decode("utf-8", errors="ignore")
-            m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html)
+        cmd_ssr = [
+            "curl", "-s", "--compressed",
+            "-H", "User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+            HOTSTAR_SHOW_URL
+        ]
+        p_ssr = subprocess.run(cmd_ssr, capture_output=True, text=True, timeout=15)
+        if p_ssr.returncode == 0 and p_ssr.stdout:
+            m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', p_ssr.stdout)
             if m:
                 s = m.group(1)
                 for m_match in re.finditer(r'"playable_content":\s*\{[^}]*"data":\s*(\{.*?\})\s*\}\s*\}', s):
