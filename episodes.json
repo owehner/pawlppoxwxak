@@ -1,0 +1,77 @@
+{
+  "show": {
+    "title": "Bigg Boss",
+    "season": 20,
+    "year": "2026",
+    "network": "JioHotstar",
+    "genre": "Reality, Drama, Game Show",
+    "host": "Salman Khan",
+    "backdrop": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg"
+  },
+  "episodes": [
+    {
+      "id": "bb-s20-e02",
+      "title": "BBHin Day 01: Kanika's Boon, Housemates' Bane!",
+      "season": 20,
+      "episode": 2,
+      "date": "7 Sep 2026",
+      "duration": "1h 6m",
+      "description": "The Gharwaales begin to settle in, but with growing connections, new conflicts follow! Kanika uses her special 'Vardaan', while BB's 20th birthday bash begins with a twist.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/5982/1788793195982-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "1.19 GB",
+          "HubCloud-stream": "df0nmeygku7asye",
+          "GDFlix-stream": "PGUwaMqprEGPcTc"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "586 MB",
+          "HubCloud-stream": "rkke7keikmnbsr7",
+          "GDFlix-stream": "H189zNzipDBN28I"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "238 MB",
+          "HubCloud-stream": "aqrbp1ggznxbnbn",
+          "GDFlix-stream": "IwatCRwS23MKF0W"
+        }
+      },
+      "HubCloud-stream": "df0nmeygku7asye",
+      "GDFlix-stream": "PGUwaMqprEGPcTc"
+    },
+    {
+      "id": "bb-s20-e01",
+      "title": "BBHin Grand Premiere: Vardaan ya Toofan?",
+      "season": 20,
+      "episode": 1,
+      "date": "6 Sep 2026",
+      "duration": "1h 33m",
+      "description": "Get ready for 'Two-much' fun as your beloved Host-Dost, Salman Khan, unveils the grand Season 20 in style! All eyes are on the 'Vardaan', which will power this epic game.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/6945/1788707656945-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "1.76 GB",
+          "HubCloud-stream": "h1qwxkhw1uhicha",
+          "GDFlix-stream": "XDbwhxWGkCO79Ff"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "833 MB",
+          "HubCloud-stream": "oohyxjhtxgx91xt",
+          "GDFlix-stream": "7NlBXQM21rmaYpy"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "338 MB",
+          "HubCloud-stream": "ekkmhh3fldew1wk",
+          "GDFlix-stream": "Rx8Em73ud0tmGLU"
+        }
+      },
+      "HubCloud-stream": "h1qwxkhw1uhicha",
+      "GDFlix-stream": "XDbwhxWGkCO79Ff"
+    }
+  ]
+}
