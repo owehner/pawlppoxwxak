@@ -31,7 +31,22 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.5"
 }
 
-def fetch_url(url, timeout=20):
+def fetch_url(url, timeout=25):
+    try:
+        import subprocess
+        cmd = [
+            "curl", "-s", "-L",
+            "-H", "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+            "-H", "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "-H", "Accept-Language: en-US,en;q=0.5",
+            "--max-time", str(timeout),
+            url
+        ]
+        res = subprocess.run(cmd, capture_output=True, text=True)
+        if res.returncode == 0 and res.stdout and len(res.stdout) > 200:
+            return res.stdout
+    except Exception:
+        pass
     req = urllib.request.Request(url, headers=HEADERS)
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return resp.read().decode("utf-8", errors="ignore")
