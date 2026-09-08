@@ -22,7 +22,7 @@ from datetime import datetime
 # Default URLs & Config
 MAIN_URL = "https://new3.moviesdrive.christmas/bigg-boss-season-20-2026/"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-EPISODES_FILE = os.path.join(BASE_DIR, "public", "episodes.json")
+EPISODES_FILE = os.path.join(BASE_DIR, "episodes.json") if os.path.exists(os.path.join(BASE_DIR, "episodes.json")) else os.path.join(BASE_DIR, "public", "episodes.json")
 STREAM_API_BASE = "https://steam-api.madmax.dpdns.org"
 
 HEADERS = {
