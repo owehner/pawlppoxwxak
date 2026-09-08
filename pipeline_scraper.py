@@ -143,12 +143,14 @@ def fetch_hotstar_metadata():
     # Method 1: Official BFF API
     try:
         headers = {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
             "x-hs-usertoken": HOTSTAR_GUEST_TOKEN,
             "x-hs-device-id": "3a061e-110c3c-15d9ae-1a600a",
             "x-hs-platform": "web",
             "x-country-code": "in",
-            "accept-language": "eng"
+            "accept-language": "eng",
+            "X-Forwarded-For": "49.36.0.1",
+            "X-Real-IP": "49.36.0.1"
         }
         req = urllib.request.Request(HOTSTAR_BFF_API, headers=headers)
         with urllib.request.urlopen(req, timeout=10) as resp:
@@ -159,7 +161,12 @@ def fetch_hotstar_metadata():
                     if m_tok:
                         HOTSTAR_GUEST_TOKEN = m_tok.group(1)
 
-            data = json.loads(resp.read().decode("utf-8"))
+            raw = resp.read()
+            if raw[:2] == b'\x1f\x8b' or resp.headers.get("Content-Encoding") == "gzip":
+                import gzip
+                raw = gzip.decompress(raw)
+
+            data = json.loads(raw.decode("utf-8"))
             items = data.get("success", {}).get("widget_wrapper", {}).get("widget", {}).get("data", {}).get("items", [])
             for it in items:
                 d = it.get("playable_content", {}).get("data", {})
