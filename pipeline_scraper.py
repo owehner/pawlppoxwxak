@@ -320,7 +320,7 @@ def run_pipeline(dry_run=False, check_sizes=True):
         print(f"\n[✓] Successfully updated {EPISODES_FILE} with {len(updated_eps)} episodes ({changes_count} changes)!")
         
         # Automatically push to public GitHub feed for instant live reflection
-        push_to_remote_feed(EPISODES_FILE)
+        # push_to_remote_feed handled by git commit in action
     else:
         print(f"\n[✓] No new episodes or ID changes found. {EPISODES_FILE} is already up to date.")
         

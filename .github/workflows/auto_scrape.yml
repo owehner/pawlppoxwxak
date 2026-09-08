@@ -2,9 +2,12 @@ name: Auto Scrape Bigg Boss Episodes
 
 on:
   schedule:
-    # Run every 30 minutes
+    # Runs every 30 minutes
     - cron: "*/30 * * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   scrape-and-update:
@@ -20,7 +23,7 @@ jobs:
 
       - name: Run Scraper Pipeline
         run: |
-          python pipeline_scraper.py --no-push
+          python pipeline_scraper.py
 
       - name: Commit and Push if updated
         run: |
