@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e03",
+      "title": "BBHin Day 02: Sanchalan Gone Wrong?",
+      "season": 20,
+      "episode": 3,
+      "date": "8 Sep 2026",
+      "duration": "1h 7m",
+      "description": "BB’s birthday party heats up as ‘Sanchalak’ Qazi faces the Gharwaales’ wrath. Doors to the '2X Room' open, bringing a special power for the captaincy contenders.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/3491/1788879743491-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "fheghjmnpnnzz1h",
+          "GDFlix-stream": "FW7jw8X1VooSnPE"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "gwoe0cc6alvyiax",
+          "GDFlix-stream": "zP23PMM7bgnOuLG"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "bcoborxbqb0cn9b",
+          "GDFlix-stream": "rU6YXs6FVlDud3Z"
+        }
+      },
+      "HubCloud-stream": "fheghjmnpnnzz1h",
+      "GDFlix-stream": "FW7jw8X1VooSnPE"
+    },
+    {
       "id": "bb-s20-e02",
       "title": "BBHin Day 01: Kanika's Boon, Housemates' Bane!",
       "season": 20,
@@ -39,7 +71,8 @@
         }
       },
       "HubCloud-stream": "df0nmeygku7asye",
-      "GDFlix-stream": "PGUwaMqprEGPcTc"
+      "GDFlix-stream": "PGUwaMqprEGPcTc",
+      "hotstar_id": "1271696739"
     },
     {
       "id": "bb-s20-e01",
@@ -71,7 +104,8 @@
         }
       },
       "HubCloud-stream": "h1qwxkhw1uhicha",
-      "GDFlix-stream": "XDbwhxWGkCO79Ff"
+      "GDFlix-stream": "XDbwhxWGkCO79Ff",
+      "hotstar_id": "1271696661"
     }
   ],
   "last_scraped_cycle": "2026-09-08"
