@@ -22,7 +22,7 @@ from datetime import datetime
 # Default URLs & Config
 MAIN_URL = "https://new3.moviesdrive.christmas/bigg-boss-season-20-2026/"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-EPISODES_FILE = os.path.join(BASE_DIR, "episodes.json") if os.path.exists(os.path.join(BASE_DIR, "episodes.json")) else os.path.join(BASE_DIR, "public", "episodes.json")
+EPISODES_FILE = os.path.join(BASE_DIR, "public", "episodes.json")
 STREAM_API_BASE = "https://steam-api.madmax.dpdns.org"
 
 HEADERS = {
@@ -31,22 +31,7 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.5"
 }
 
-def fetch_url(url, timeout=25):
-    try:
-        import subprocess
-        cmd = [
-            "curl", "-s", "-L",
-            "-H", "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-            "-H", "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "-H", "Accept-Language: en-US,en;q=0.5",
-            "--max-time", str(timeout),
-            url
-        ]
-        res = subprocess.run(cmd, capture_output=True, text=True)
-        if res.returncode == 0 and res.stdout and len(res.stdout) > 200:
-            return res.stdout
-    except Exception:
-        pass
+def fetch_url(url, timeout=20):
     req = urllib.request.Request(url, headers=HEADERS)
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return resp.read().decode("utf-8", errors="ignore")
@@ -156,10 +141,38 @@ def load_existing_episodes():
         "episodes": []
     }
 
-def run_pipeline(dry_run=False, check_sizes=True):
+def run_pipeline(dry_run=False, check_sizes=True, force=False):
+    from datetime import datetime, timezone, timedelta
+    IST = timezone(timedelta(hours=5, minutes=30))
+    now_ist = datetime.now(IST)
+    
+    # Night cycle date: before 6:00 AM IST belongs to previous calendar day's show night
+    cycle_date = (now_ist - timedelta(days=1)).strftime('%Y-%m-%d') if now_ist.hour < 6 else now_ist.strftime('%Y-%m-%d')
+    
+    existing_data = load_existing_episodes()
+    last_cycle = existing_data.get("last_scraped_cycle")
+    
     print("==================================================")
     print("  Bigg Boss Season 20 — Pipeline Scraper")
+    print(f"  Current Time (IST): {now_ist.strftime('%Y-%m-%d %I:%M %p')}")
+    print(f"  Active Night Cycle: {cycle_date}")
     print("==================================================")
+    
+    if not force and not dry_run:
+        # Check 1: Has tonight's episode already been scraped?
+        if last_cycle == cycle_date:
+            print(f"\n[✓] Tonight's episode for cycle {cycle_date} is ALREADY scraped & published!")
+            print(f"[*] Stopping early. Next run will seek new episodes tomorrow after 11:00 PM IST.")
+            print(f"[*] (Use --force to bypass this check and scrape anyway)")
+            return True
+            
+        # Check 2: Outside airing window (daytime 6:00 AM to 10:30 PM IST)
+        if 6 <= now_ist.hour < 22 or (now_ist.hour == 22 and now_ist.minute < 30):
+            print(f"\n[*] Daytime ({now_ist.strftime('%I:%M %p IST')}): Episodes air daily after 10:30 PM IST.")
+            print(f"[*] Scraper will automatically activate tonight at 11:00 PM IST.")
+            print(f"[*] (Use --force to bypass this check and scrape anyway)")
+            return True
+
     print(f"[*] Step 1: Fetching main show page: {MAIN_URL}")
     
     try:
@@ -330,55 +343,22 @@ def run_pipeline(dry_run=False, check_sizes=True):
         return True
         
     if changes_count > 0 or not os.path.exists(EPISODES_FILE):
+        existing_data["last_scraped_cycle"] = cycle_date
         with open(EPISODES_FILE, "w", encoding="utf-8") as f:
             json.dump(existing_data, f, indent=2, ensure_ascii=False)
         print(f"\n[✓] Successfully updated {EPISODES_FILE} with {len(updated_eps)} episodes ({changes_count} changes)!")
-        
-        # Automatically push to public GitHub feed for instant live reflection
-        # push_to_remote_feed handled by git commit in action
+        print(f"[✓] Marked night cycle {cycle_date} as completed!")
     else:
         print(f"\n[✓] No new episodes or ID changes found. {EPISODES_FILE} is already up to date.")
         
     return True
 
-def push_to_remote_feed(episodes_file):
-    try:
-        import subprocess, base64
-        with open(episodes_file, "rb") as f:
-            content_b64 = base64.b64encode(f.read()).decode("utf-8")
-        
-        # Get existing sha
-        get_res = subprocess.run(
-            ["gh", "api", "repos/bbrooks870/stream-feed-vault/contents/episodes.json", "--jq", ".sha"],
-            capture_output=True, text=True
-        )
-        sha = get_res.stdout.strip()
-        
-        payload = {
-            "message": "chore: auto-update episodes.json from pipeline",
-            "content": content_b64
-        }
-        if sha:
-            payload["sha"] = sha
-        
-        put_res = subprocess.run(
-            ["gh", "api", "--method", "PUT", "repos/bbrooks870/stream-feed-vault/contents/episodes.json", "--input", "-"],
-            input=json.dumps(payload), capture_output=True, text=True
-        )
-        if put_res.returncode == 0:
-            print("[✓] Pushed updated episodes to GitHub feed: bbrooks870/stream-feed-vault (LIVE INSTANTLY!)")
-            return True
-        else:
-            print(f"[!] Warning: Could not push to GitHub feed: {put_res.stderr.strip()}")
-    except Exception as e:
-        print(f"[!] Warning: Push to GitHub feed failed: {e}")
-    return False
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Bigg Boss Season 20 Scraper Pipeline")
     parser.add_argument("--dry-run", action="store_true", help="Preview output without writing to episodes.json")
     parser.add_argument("--no-sizes", action="store_true", help="Skip stream-api file size checks for faster scraping")
+    parser.add_argument("--force", action="store_true", help="Force scraping even if outside window or already scraped tonight")
     args = parser.parse_args()
     
-    success = run_pipeline(dry_run=args.dry_run, check_sizes=not args.no_sizes)
+    success = run_pipeline(dry_run=args.dry_run, check_sizes=not args.no_sizes, force=args.force)
     sys.exit(0 if success else 1)

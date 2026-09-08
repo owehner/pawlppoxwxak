@@ -2,8 +2,18 @@ name: Auto Scrape Bigg Boss Episodes
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    # Runs every 20 minutes during episode release window (11:00 PM IST to 2:50 AM IST)
+    - cron: "30,50 17 * * *"
+    - cron: "*/20 18-20 * * *"
+    - cron: "10,30,50 21 * * *"
+    # Morning fallback run at 11:00 AM IST in case upload was delayed overnight
+    - cron: "30 5 * * *"
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Force scrape even outside night window or if today's episode is already found"
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -22,7 +32,11 @@ jobs:
 
       - name: Run Scraper Pipeline
         run: |
-          python pipeline_scraper.py --no-sizes
+          FLAGS="--no-sizes"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.force }}" = "true" ]; then
+            FLAGS="$FLAGS --force"
+          fi
+          python pipeline_scraper.py $FLAGS
 
       - name: Commit and Push if updated
         run: |
