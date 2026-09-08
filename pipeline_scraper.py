@@ -127,6 +127,120 @@ def get_stream_file_size(provider_type, file_id):
         pass
     return ""
 
+HOTSTAR_SHOW_URL = "https://www.hotstar.com/in/shows/bigg-boss/1971002586"
+HOTSTAR_BFF_API = "https://www.hotstar.com/api/internal/bff/v2/pages/2902/spaces/10730/widgets/79631/widgets/168?content_id=1971002586&page_enum=detail&season_content_id=1271669715&season_id=1271669715&wti_name=EpisodeNavigation"
+HOTSTAR_GUEST_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ7XCJoSWRcIjpcImFmOTVlYzJhOWRhMDQ5OWQ4NDhjYThmOTAxZmUzM2EwXCIsXCJwSWRcIjpcImMzNmI1OTgzNTU5MTQyYTM4MmEwY2JjNjY2OWIxZDM3XCIsXCJkd0hpZFwiOlwiNzVmZThlMmE0OWFhODk2ODJjOGYzYTg3YWU5NmMyNzEzM2ExNDIyNTc1YjZiNzVjM2NiOWFjNWU2MWE1MTBjY1wiLFwiZHdQaWRcIjpcIjgzMDI1NjQ4OTFjY2UxMDc3NmU4NmU0ZjE3YWY5N2M3ODJjMGE4MjQ1MjU0MWJjYWQyOGZmODI3ZTc5ZDg4NWJcIixcIm9sZEhpZFwiOlwiYWY5NWVjMmE5ZGEwNDk5ZDg0OGNhOGY5MDFmZTMzYTBcIixcIm9sZFBpZFwiOlwiYzM2YjU5ODM1NTkxNDJhMzgyYTBjYmM2NjY5YjFkMzdcIixcImlzUGlpVXNlck1pZ3JhdGVkXCI6ZmFsc2UsXCJuYW1lXCI6XCJZb3VcIixcImlwXCI6XCIyNDAxOjQ5MDA6OGY4MDo0OWVlOmRjZTI6NTU5ZTpkMzRjOmNiNWNcIixcImNvdW50cnlDb2RlXCI6XCJpblwiLFwiY3VzdG9tZXJUeXBlXCI6XCJudVwiLFwidHlwZVwiOlwiZ3Vlc3RcIixcImlzRW1haWxWZXJpZmllZFwiOmZhbHNlLFwiaXNQaG9uZVZlcmlmaWVkXCI6ZmFsc2UsXCJkZXZpY2VJZFwiOlwiM2EwNjFlLTExMGMzYy0xNWQ5YWUtMWE2MDBhXCIsXCJwcm9maWxlXCI6XCJBRFVMVFwiLFwidmVyc2lvblwiOlwidjJcIixcInN1YnNjcmlwdGlvbnNcIjp7XCJpblwiOnt9fSxcImlzc3VlZEF0XCI6MTc4ODg5MjA2MzUwNixcImRwaWRcIjpcImMzNmI1OTgzNTU5MTQyYTM4MmEwY2JjNjY2OWIxZDM3XCIsXCJzdFwiOjEsXCJkYXRhXCI6XCJDZ3dJQUNJSWtBR0Z6cHFTaURRS0JBZ0FRZ0FLQkFnQU9nQT1cIn0iLCJpc3MiOiJVTSIsImV4cCI6MTc4ODk3ODQ2MywianRpIjoiZjAyOTM3Yzg5NzNmNDRlNTlkMjNhMTJmYjI3MDAxZGYiLCJpYXQiOjE3ODg4OTIwNjMsImFwcElkIjoiIiwidGVuYW50IjoiIiwidmVyc2lvbiI6IjFfMCIsImF1ZCI6InVtX2FjY2VzcyJ9.2ZtsgMvkHFtBejWloGsCAZIfAZy_yqi5XMWDbKO2fXc"
+
+def fetch_hotstar_metadata():
+    """
+    Fetches official episode metadata (titles, descriptions, HD thumbnails) from JioHotstar.
+    Method 1: Direct Hotstar BFF API (instant, high accuracy).
+    Method 2: Next.js SSR SEO crawl (Googlebot user-agent fallback).
+    """
+    episodes = {}
+    global HOTSTAR_GUEST_TOKEN
+
+    # Method 1: Official BFF API
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+            "x-hs-usertoken": HOTSTAR_GUEST_TOKEN,
+            "x-hs-device-id": "3a061e-110c3c-15d9ae-1a600a",
+            "x-hs-platform": "web",
+            "x-country-code": "in",
+            "accept-language": "eng"
+        }
+        req = urllib.request.Request(HOTSTAR_BFF_API, headers=headers)
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            # Token auto-renewal
+            for k, v in resp.headers.items():
+                if "sessionuserup=" in v.lower():
+                    m_tok = re.search(r'sessionUserUP=([^;]+)', v)
+                    if m_tok:
+                        HOTSTAR_GUEST_TOKEN = m_tok.group(1)
+
+            data = json.loads(resp.read().decode("utf-8"))
+            items = data.get("success", {}).get("widget_wrapper", {}).get("widget", {}).get("data", {}).get("items", [])
+            for it in items:
+                d = it.get("playable_content", {}).get("data", {})
+                ep_num = None
+                air_date = ""
+                duration = ""
+                for tag in d.get("tags", []):
+                    val = tag.get("value", "")
+                    m_ep = re.search(r"E(\d+)", val)
+                    if m_ep:
+                        ep_num = int(m_ep.group(1))
+                    elif any(month in val for month in ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]):
+                        air_date = val
+                    elif "m" in val or "h" in val:
+                        duration = val
+
+                if ep_num is not None:
+                    poster_src = d.get("poster", {}).get("src", "")
+                    img_url = f"https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/{poster_src}" if poster_src else ""
+                    episodes[ep_num] = {
+                        "title": d.get("title", ""),
+                        "description": d.get("description", ""),
+                        "thumbnail": img_url,
+                        "date": air_date,
+                        "duration": duration,
+                        "hotstar_id": d.get("content_id", "")
+                    }
+            if episodes:
+                print(f"[*] Successfully retrieved {len(episodes)} episodes metadata from Hotstar Official API!")
+                return episodes
+    except Exception as e:
+        print(f"[*] Hotstar BFF API note: {e}, checking SSR fallback...")
+
+    # Method 2: Googlebot Next.js SSR Fallback
+    try:
+        req = urllib.request.Request(
+            HOTSTAR_SHOW_URL,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"}
+        )
+        with urllib.request.urlopen(req, timeout=12) as resp:
+            html = resp.read().decode("utf-8", errors="ignore")
+            m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html)
+            if m:
+                s = m.group(1)
+                for m_match in re.finditer(r'"playable_content":\s*\{[^}]*"data":\s*(\{.*?\})\s*\}\s*\}', s):
+                    try:
+                        d = json.loads(m_match.group(1))
+                        ep_num = None
+                        air_date = ""
+                        duration = ""
+                        for tag in d.get("tags", []):
+                            val = tag.get("value", "")
+                            m_ep = re.search(r"E(\d+)", val)
+                            if m_ep:
+                                ep_num = int(m_ep.group(1))
+                            elif any(month in val for month in ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]):
+                                air_date = val
+                            elif "m" in val or "h" in val:
+                                duration = val
+
+                        if ep_num is not None:
+                            poster_src = d.get("poster", {}).get("src", "")
+                            img_url = f"https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/{poster_src}" if poster_src else ""
+                            episodes[ep_num] = {
+                                "title": d.get("title", ""),
+                                "description": d.get("description", ""),
+                                "thumbnail": img_url,
+                                "date": air_date,
+                                "duration": duration,
+                                "hotstar_id": d.get("content_id", "")
+                            }
+                    except Exception:
+                        pass
+        if episodes:
+            print(f"[*] Successfully retrieved {len(episodes)} episodes metadata from Hotstar SSR Fallback!")
+            return episodes
+    except Exception as e:
+        print(f"[*] Hotstar SSR Fallback error: {e}")
+
+    return episodes
+
 def load_existing_episodes():
     if os.path.exists(EPISODES_FILE):
         with open(EPISODES_FILE, "r", encoding="utf-8") as f:
@@ -210,6 +324,9 @@ def run_pipeline(dry_run=False, check_sizes=True, force=False):
     all_ep_nums = sorted(scraped_data.keys(), reverse=True)
     print(f"\n[*] Extracted episodes: {[f'EP {n}' for n in all_ep_nums]}")
     
+    print("\n[*] Step 2.5: Fetching official JioHotstar metadata...")
+    hotstar_meta = fetch_hotstar_metadata()
+    
     # Load existing episodes
     existing_data = load_existing_episodes()
     existing_eps = existing_data.get("episodes", [])
@@ -218,7 +335,7 @@ def run_pipeline(dry_run=False, check_sizes=True, force=False):
     updated_eps = []
     changes_count = 0
     
-    print("\n[*] Step 3: Merging with public/episodes.json...")
+    print("\n[*] Step 3: Merging with episodes.json...")
     for ep_num in all_ep_nums:
         ep_qualities_scraped = scraped_data[ep_num]
         
@@ -228,12 +345,33 @@ def run_pipeline(dry_run=False, check_sizes=True, force=False):
         q480 = ep_qualities_scraped.get("480p", {})
         
         existing_ep = existing_by_num.get(ep_num)
+        hs_info = hotstar_meta.get(ep_num, {})
         
         if existing_ep:
             # Update existing episode's qualities if changed
             ep_obj = existing_ep.copy()
             if "qualities" not in ep_obj:
                 ep_obj["qualities"] = {}
+
+            # Enrich existing episode if it has generic title or fallback backdrop
+            if hs_info:
+                current_title = ep_obj.get("title", "")
+                if current_title.startswith("Bigg Boss Season 20 Episode") or not current_title:
+                    ep_obj["title"] = hs_info["title"]
+                    changes_count += 1
+                    print(f"    [HOTSTAR] Enriched Episode {ep_num} title -> {hs_info['title']}")
+                if not ep_obj.get("description") or "Catch all the uncut drama" in ep_obj.get("description", ""):
+                    ep_obj["description"] = hs_info["description"]
+                    changes_count += 1
+                if not ep_obj.get("thumbnail") or "backdrop" in ep_obj.get("thumbnail", "") or "m.media-amazon.com" in ep_obj.get("thumbnail", ""):
+                    ep_obj["thumbnail"] = hs_info["thumbnail"]
+                    changes_count += 1
+                if hs_info.get("date") and (not ep_obj.get("date") or ep_obj.get("date") == datetime.now().strftime("%d %b %Y")):
+                    ep_obj["date"] = hs_info["date"]
+                if hs_info.get("duration") and (not ep_obj.get("duration") or ep_obj.get("duration") == "1h 30m"):
+                    ep_obj["duration"] = hs_info["duration"]
+                if hs_info.get("hotstar_id"):
+                    ep_obj["hotstar_id"] = hs_info["hotstar_id"]
                 
             for q_name, q_links, default_label in [
                 ("1080p", q1080, "1080p FHD"),
@@ -274,6 +412,16 @@ def run_pipeline(dry_run=False, check_sizes=True, force=False):
             print(f"    [NEW] Found new Episode {ep_num}!")
             changes_count += 1
             
+            # Use official Hotstar metadata if available
+            ep_title = hs_info.get("title") or f"Bigg Boss Season 20 Episode {ep_num}"
+            ep_desc = hs_info.get("description") or f"Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode {ep_num}."
+            ep_thumb = hs_info.get("thumbnail") or existing_data.get("show", {}).get("backdrop", "")
+            ep_date = hs_info.get("date") or datetime.now().strftime("%d %b %Y")
+            ep_dur = hs_info.get("duration") or "1h 30m"
+            
+            if hs_info:
+                print(f"    [HOTSTAR] Attached official title: {ep_title}")
+            
             # Fetch sizes
             size_1080 = get_stream_file_size("hubcloud", q1080.get("hubcloud")) if check_sizes else ""
             size_720 = get_stream_file_size("hubcloud", q720.get("hubcloud")) if check_sizes else ""
@@ -281,13 +429,13 @@ def run_pipeline(dry_run=False, check_sizes=True, force=False):
             
             new_ep = {
                 "id": f"bb-s20-e{ep_num:02d}",
-                "title": f"Bigg Boss Season 20 Episode {ep_num}",
+                "title": ep_title,
                 "season": 20,
                 "episode": ep_num,
-                "date": datetime.now().strftime("%d %b %Y"),
-                "duration": "1h 30m",
-                "description": f"Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode {ep_num}.",
-                "thumbnail": existing_data.get("show", {}).get("backdrop", ""),
+                "date": ep_date,
+                "duration": ep_dur,
+                "description": ep_desc,
+                "thumbnail": ep_thumb,
                 "qualities": {
                     "1080p": {
                         "label": "1080p FHD",
