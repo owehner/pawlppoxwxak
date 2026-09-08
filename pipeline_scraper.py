@@ -131,15 +131,42 @@ HOTSTAR_SHOW_URL = "https://www.hotstar.com/in/shows/bigg-boss/1971002586"
 HOTSTAR_BFF_API = "https://www.hotstar.com/api/internal/bff/v2/pages/2902/spaces/10730/widgets/79631/widgets/168?content_id=1971002586&page_enum=detail&season_content_id=1271669715&season_id=1271669715&wti_name=EpisodeNavigation"
 HOTSTAR_GUEST_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ7XCJoSWRcIjpcImFmOTVlYzJhOWRhMDQ5OWQ4NDhjYThmOTAxZmUzM2EwXCIsXCJwSWRcIjpcImMzNmI1OTgzNTU5MTQyYTM4MmEwY2JjNjY2OWIxZDM3XCIsXCJkd0hpZFwiOlwiNzVmZThlMmE0OWFhODk2ODJjOGYzYTg3YWU5NmMyNzEzM2ExNDIyNTc1YjZiNzVjM2NiOWFjNWU2MWE1MTBjY1wiLFwiZHdQaWRcIjpcIjgzMDI1NjQ4OTFjY2UxMDc3NmU4NmU0ZjE3YWY5N2M3ODJjMGE4MjQ1MjU0MWJjYWQyOGZmODI3ZTc5ZDg4NWJcIixcIm9sZEhpZFwiOlwiYWY5NWVjMmE5ZGEwNDk5ZDg0OGNhOGY5MDFmZTMzYTBcIixcIm9sZFBpZFwiOlwiYzM2YjU5ODM1NTkxNDJhMzgyYTBjYmM2NjY5YjFkMzdcIixcImlzUGlpVXNlck1pZ3JhdGVkXCI6ZmFsc2UsXCJuYW1lXCI6XCJZb3VcIixcImlwXCI6XCIyNDAxOjQ5MDA6OGY4MDo0OWVlOmRjZTI6NTU5ZTpkMzRjOmNiNWNcIixcImNvdW50cnlDb2RlXCI6XCJpblwiLFwiY3VzdG9tZXJUeXBlXCI6XCJudVwiLFwidHlwZVwiOlwiZ3Vlc3RcIixcImlzRW1haWxWZXJpZmllZFwiOmZhbHNlLFwiaXNQaG9uZVZlcmlmaWVkXCI6ZmFsc2UsXCJkZXZpY2VJZFwiOlwiM2EwNjFlLTExMGMzYy0xNWQ5YWUtMWE2MDBhXCIsXCJwcm9maWxlXCI6XCJBRFVMVFwiLFwidmVyc2lvblwiOlwidjJcIixcInN1YnNjcmlwdGlvbnNcIjp7XCJpblwiOnt9fSxcImlzc3VlZEF0XCI6MTc4ODg5MjA2MzUwNixcImRwaWRcIjpcImMzNmI1OTgzNTU5MTQyYTM4MmEwY2JjNjY2OWIxZDM3XCIsXCJzdFwiOjEsXCJkYXRhXCI6XCJDZ3dJQUNJSWtBR0Z6cHFTaURRS0JBZ0FRZ0FLQkFnQU9nQT1cIn0iLCJpc3MiOiJVTSIsImV4cCI6MTc4ODk3ODQ2MywianRpIjoiZjAyOTM3Yzg5NzNmNDRlNTlkMjNhMTJmYjI3MDAxZGYiLCJpYXQiOjE3ODg4OTIwNjMsImFwcElkIjoiIiwidGVuYW50IjoiIiwidmVyc2lvbiI6IjFfMCIsImF1ZCI6InVtX2FjY2VzcyJ9.2ZtsgMvkHFtBejWloGsCAZIfAZy_yqi5XMWDbKO2fXc"
 
+HOTSTAR_WORKER_APIS = [
+    "https://bb.kalyug.dpdns.org/api/hotstar",
+    "https://bigg-boss-s20.pages.dev/api/hotstar"
+]
+
 def fetch_hotstar_metadata():
     """
     Fetches official episode metadata (titles, descriptions, HD thumbnails) from JioHotstar.
-    Uses curl with modern TLS/HTTP2 and auto-decompression to query Hotstar's official BFF API.
+    Primary: Queries the Cloudflare Edge Worker API (bypasses all CI/CD geo-blocking).
+    Secondary: Direct JioHotstar official BFF API via curl.
+    Tertiary: Hotstar SSR Next.js crawler via curl.
     """
     import subprocess
     episodes = {}
     global HOTSTAR_GUEST_TOKEN
 
+    # Method 1: Cloudflare Edge Worker API Gateway
+    for api_url in HOTSTAR_WORKER_APIS:
+        try:
+            cmd = ["curl", "-s", "--max-time", "10", api_url]
+            p = subprocess.run(cmd, capture_output=True, text=True, timeout=12)
+            if p.returncode == 0 and p.stdout:
+                data = json.loads(p.stdout)
+                if data.get("success") and data.get("episodes"):
+                    for k, v in data["episodes"].items():
+                        try:
+                            episodes[int(k)] = v
+                        except (ValueError, TypeError):
+                            pass
+                    if episodes:
+                        print(f"[*] Successfully retrieved {len(episodes)} episodes metadata from Cloudflare Edge Worker ({api_url})!")
+                        return episodes
+        except Exception as e:
+            print(f"[*] Worker API {api_url} note: {e}")
+
+    # Method 2: Direct Hotstar Official BFF API via curl
     cmd = [
         "curl", "-s", "--compressed",
         "-H", f"x-hs-usertoken: {HOTSTAR_GUEST_TOKEN}",

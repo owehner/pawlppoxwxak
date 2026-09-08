@@ -10,38 +10,6 @@
   },
   "episodes": [
     {
-      "id": "bb-s20-e03",
-      "title": "Bigg Boss Season 20 Episode 3",
-      "season": 20,
-      "episode": 3,
-      "date": "08 Sep 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 3.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
-      "qualities": {
-        "1080p": {
-          "label": "1080p FHD",
-          "size": "",
-          "HubCloud-stream": "fheghjmnpnnzz1h",
-          "GDFlix-stream": "FW7jw8X1VooSnPE"
-        },
-        "720p": {
-          "label": "720p HD",
-          "size": "",
-          "HubCloud-stream": "gwoe0cc6alvyiax",
-          "GDFlix-stream": "zP23PMM7bgnOuLG"
-        },
-        "480p": {
-          "label": "480p SD",
-          "size": "",
-          "HubCloud-stream": "bcoborxbqb0cn9b",
-          "GDFlix-stream": "rU6YXs6FVlDud3Z"
-        }
-      },
-      "HubCloud-stream": "fheghjmnpnnzz1h",
-      "GDFlix-stream": "FW7jw8X1VooSnPE"
-    },
-    {
       "id": "bb-s20-e02",
       "title": "BBHin Day 01: Kanika's Boon, Housemates' Bane!",
       "season": 20,
