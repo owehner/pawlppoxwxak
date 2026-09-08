@@ -2,6 +2,7 @@
   "version": "1.0",
   "allowed_origins": [
     "https://your-frontend-website.com",
+    "https://bb.kalyug.dpdns.org",
     "https://bigg-boss-s20.pages.dev",
     "http://localhost:3000"
   ],
