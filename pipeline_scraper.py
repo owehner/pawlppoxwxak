@@ -149,6 +149,7 @@ def fetch_hotstar_metadata():
             "x-hs-platform": "web",
             "x-country-code": "in",
             "accept-language": "eng",
+            "Accept-Encoding": "identity",
             "X-Forwarded-For": "49.36.0.1",
             "X-Real-IP": "49.36.0.1"
         }
@@ -198,16 +199,23 @@ def fetch_hotstar_metadata():
                 print(f"[*] Successfully retrieved {len(episodes)} episodes metadata from Hotstar Official API!")
                 return episodes
     except Exception as e:
-        print(f"[*] Hotstar BFF API note: {e}, checking SSR fallback...")
+        print(f"[*] Hotstar BFF API note: {repr(e)}, checking SSR fallback...")
 
     # Method 2: Googlebot Next.js SSR Fallback
     try:
         req = urllib.request.Request(
             HOTSTAR_SHOW_URL,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"}
+            headers={
+                "User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+                "Accept-Encoding": "identity"
+            }
         )
         with urllib.request.urlopen(req, timeout=12) as resp:
-            html = resp.read().decode("utf-8", errors="ignore")
+            raw = resp.read()
+            if raw[:2] == b'\x1f\x8b' or resp.headers.get("Content-Encoding") == "gzip":
+                import gzip
+                raw = gzip.decompress(raw)
+            html = raw.decode("utf-8", errors="ignore")
             m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html)
             if m:
                 s = m.group(1)
