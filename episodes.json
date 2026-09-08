@@ -11,29 +11,29 @@
   "episodes": [
     {
       "id": "bb-s20-e02",
-      "title": "Bigg Boss Season 20 Episode 2",
+      "title": "BBHin Day 01: Kanika's Boon, Housemates' Bane!",
       "season": 20,
       "episode": 2,
-      "date": "08 Sep 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 2.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "date": "7 Sep 2026",
+      "duration": "1h 6m",
+      "description": "The Gharwaales begin to settle in, but with growing connections, new conflicts follow! Kanika uses her special 'Vardaan', while BB's 20th birthday bash begins with a twist.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/5982/1788793195982-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
-          "size": "",
+          "size": "1.19 GB",
           "HubCloud-stream": "df0nmeygku7asye",
           "GDFlix-stream": "PGUwaMqprEGPcTc"
         },
         "720p": {
           "label": "720p HD",
-          "size": "",
+          "size": "586 MB",
           "HubCloud-stream": "rkke7keikmnbsr7",
           "GDFlix-stream": "H189zNzipDBN28I"
         },
         "480p": {
           "label": "480p SD",
-          "size": "",
+          "size": "238 MB",
           "HubCloud-stream": "aqrbp1ggznxbnbn",
           "GDFlix-stream": "IwatCRwS23MKF0W"
         }
