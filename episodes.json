@@ -11,29 +11,29 @@
   "episodes": [
     {
       "id": "bb-s20-e03",
-      "title": "Bigg Boss Season 20 Episode 3",
+      "title": "BBHin Day 02: Sanchalan Gone Wrong?",
       "season": 20,
       "episode": 3,
-      "date": "08 Sep 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 3.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "date": "8 Sep 2026",
+      "duration": "1h 7m",
+      "description": "BB's birthday party heats up as 'Sanchalak' Qazi faces the Gharwaales' wrath. Doors to the '2X Room' open, bringing a special power for the captaincy contenders.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/3491/1788879743491-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
-          "size": "",
+          "size": "1.21 GB",
           "HubCloud-stream": "fheghjmnpnnzz1h",
           "GDFlix-stream": "FW7jw8X1VooSnPE"
         },
         "720p": {
           "label": "720p HD",
-          "size": "",
+          "size": "596 MB",
           "HubCloud-stream": "gwoe0cc6alvyiax",
           "GDFlix-stream": "zP23PMM7bgnOuLG"
         },
         "480p": {
           "label": "480p SD",
-          "size": "",
+          "size": "245 MB",
           "HubCloud-stream": "bcoborxbqb0cn9b",
           "GDFlix-stream": "rU6YXs6FVlDud3Z"
         }
