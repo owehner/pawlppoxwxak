@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e04",
+      "title": "BBHin Day 03: All Eyes on 'Pehla Kaptaan'",
+      "season": 20,
+      "episode": 4,
+      "date": "9 Sep 2026",
+      "duration": "1h 7m",
+      "description": "Gossip intensifies with ‘rockstar’ Qazi becoming the talk of the house! As the BB movie premiere begins, Gharwaales rally behind their favourite for the coveted first captaincy.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/5405/1788964455405-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "1.26 GB",
+          "HubCloud-stream": "2hnvyfyhzxjyqdw",
+          "GDFlix-stream": "FoiV3LUd4cTMVX4"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "555.81 MB",
+          "HubCloud-stream": "yldiwfxk1kwbrxb",
+          "GDFlix-stream": "nbvlaAYsKEnv0BO"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": null,
+          "GDFlix-stream": null
+        }
+      },
+      "HubCloud-stream": "2hnvyfyhzxjyqdw",
+      "GDFlix-stream": "FoiV3LUd4cTMVX4"
+    },
+    {
       "id": "bb-s20-e03",
       "title": "BBHin Day 02: Sanchalan Gone Wrong?",
       "season": 20,
@@ -21,25 +53,26 @@
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
-          "size": "",
+          "size": "1.18 GB",
           "HubCloud-stream": "fheghjmnpnnzz1h",
           "GDFlix-stream": "FW7jw8X1VooSnPE"
         },
         "720p": {
           "label": "720p HD",
-          "size": "",
+          "size": "596.42 MB",
           "HubCloud-stream": "gwoe0cc6alvyiax",
           "GDFlix-stream": "zP23PMM7bgnOuLG"
         },
         "480p": {
           "label": "480p SD",
-          "size": "",
+          "size": "242.36 MB",
           "HubCloud-stream": "bcoborxbqb0cn9b",
           "GDFlix-stream": "rU6YXs6FVlDud3Z"
         }
       },
       "HubCloud-stream": "fheghjmnpnnzz1h",
-      "GDFlix-stream": "FW7jw8X1VooSnPE"
+      "GDFlix-stream": "FW7jw8X1VooSnPE",
+      "hotstar_id": "1271696745"
     },
     {
       "id": "bb-s20-e02",
@@ -108,5 +141,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-09-08"
+  "last_scraped_cycle": "2026-09-09"
 }

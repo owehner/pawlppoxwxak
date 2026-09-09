@@ -110,6 +110,50 @@ def scrape_archive(archive_url):
         
     return episodes
 
+MOVIES4U_URL = "https://new5.movies4u.clinic/bigg-boss-season-20-hindi-reality-show-web-dl/"
+
+def scrape_movies4u(url=MOVIES4U_URL):
+    """
+    Scrapes Movies4u source for Bigg Boss Season 20 episodes.
+    Returns: { ep_num: { '1080p': {'hubcloud': id, 'gdflix': id}, '720p': {...} } }
+    """
+    print(f"\n[*] Checking alternate source (Movies4u): {url}")
+    try:
+        html = fetch_url(url)
+    except Exception as e:
+        print(f"    [!] Error fetching Movies4u page: {e}")
+        return {}
+
+    # Extract quality links: e.g. 720p -> https://m4ulinks.site/number/66007
+    qualities = {}
+    matches = re.findall(r"(720p|1080p|480p)[\s\S]*?<a\s+[^>]*href=[\x27\x22](https://m4ulinks\.site/number/\d+)[\x27\x22]", html, flags=re.IGNORECASE)
+    for q, link in matches:
+        q_clean = q.lower()
+        if q_clean not in qualities:
+            qualities[q_clean] = link
+
+    scraped = {}
+    for q, arch_url in qualities.items():
+        print(f"    Movies4u: Scraping {q} from {arch_url}...")
+        try:
+            arch_html = fetch_url(arch_url)
+            blocks = re.split(r"<h5>\s*-:\s*Episodes?:\s*(\d+)\s*:-?\s*</h5>", arch_html, flags=re.IGNORECASE)
+            for i in range(1, len(blocks), 2):
+                ep_num = int(blocks[i])
+                block = blocks[i+1]
+                hub = re.search(r"hubcloud\.[^/]+/drive/([a-zA-Z0-9_-]+)", block)
+                gd = re.search(r"gdflix\.[^/]+/file/([a-zA-Z0-9_-]+)", block)
+                if ep_num not in scraped:
+                    scraped[ep_num] = {}
+                scraped[ep_num][q] = {
+                    "hubcloud": hub.group(1) if hub else None,
+                    "gdflix": gd.group(1) if gd else None
+                }
+        except Exception as e:
+            print(f"    [!] Error scraping Movies4u {q}: {e}")
+
+    return scraped
+
 def get_stream_file_size(provider_type, file_id):
     """
     Optionally queries stream-api to get precise file size (e.g. 1.76 GB)
@@ -161,12 +205,12 @@ def fetch_hotstar_metadata():
                         except (ValueError, TypeError):
                             pass
                     if episodes:
-                        print(f"[*] Successfully retrieved {len(episodes)} episodes metadata from Cloudflare Edge Worker ({api_url})!")
-                        return episodes
+                        print(f"[*] Retrieved {len(episodes)} episodes metadata from Cloudflare Edge Worker ({api_url})")
+                        break
         except Exception as e:
             print(f"[*] Worker API {api_url} note: {e}")
 
-    # Method 2: Direct Hotstar Official BFF API via curl
+    # Method 2: Direct Hotstar Official BFF API via curl (always checks for latest released episodes)
     cmd = [
         "curl", "-s", "--compressed",
         "-H", f"x-hs-usertoken: {HOTSTAR_GUEST_TOKEN}",
@@ -178,6 +222,7 @@ def fetch_hotstar_metadata():
         HOTSTAR_BFF_API
     ]
 
+    new_found = False
     try:
         p = subprocess.run(cmd, capture_output=True, text=True, timeout=15)
         if p.returncode == 0 and p.stdout:
@@ -198,7 +243,7 @@ def fetch_hotstar_metadata():
                     elif "m" in val or "h" in val:
                         duration = val
 
-                if ep_num is not None:
+                if ep_num is not None and (ep_num not in episodes or not episodes[ep_num].get("title")):
                     poster_src = d.get("poster", {}).get("src", "")
                     img_url = f"https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/{poster_src}" if poster_src else ""
                     episodes[ep_num] = {
@@ -209,11 +254,21 @@ def fetch_hotstar_metadata():
                         "duration": duration,
                         "hotstar_id": d.get("content_id", "")
                     }
-            if episodes:
-                print(f"[*] Successfully retrieved {len(episodes)} episodes metadata from Hotstar Official API!")
-                return episodes
-    except Exception as e:
-        print(f"[*] Hotstar BFF API note: {repr(e)}, checking SSR fallback...")
+                    new_found = True
+                    print(f"[*] Found newest Hotstar metadata directly: Ep {ep_num} -> {d.get('title')}")
+            
+            if new_found:
+                try:
+                    sync_payload = json.dumps({"episodes": {str(k): v for k, v in episodes.items()}})
+                    subprocess.run(["curl", "-s", "-X", "POST", "-H", "Content-Type: application/json", "-d", sync_payload, "https://bb.kalyug.dpdns.org/api/hotstar"], timeout=5)
+                except Exception:
+                    pass
+    except Exception:
+        pass
+
+    if episodes:
+        print(f"[*] Successfully retrieved {len(episodes)} episodes metadata from Hotstar!")
+        return episodes
 
     # Method 2: Googlebot Next.js SSR Fallback via curl
     try:
@@ -313,39 +368,48 @@ def run_pipeline(dry_run=False, check_sizes=True, force=False):
             print(f"[*] (Use --force to bypass this check and scrape anyway)")
             return True
 
-    print(f"[*] Step 1: Fetching main show page: {MAIN_URL}")
+    print(f"[*] Step 1: Fetching quality archives from primary source (MoviesDrive)...")
+    scraped_data = {}  # { ep_num: { "1080p": {...}, "720p": {...}, "480p": {...} } }
     
     try:
         main_html = fetch_url(MAIN_URL)
+        archives = extract_quality_archives(main_html)
+        print(f"[*] Found {len(archives)} quality archive URLs on MoviesDrive:")
+        for q in ["1080p", "720p", "480p"]:
+            if q in archives:
+                print(f"    - {q}: {archives[q]}")
+                
+        for q, arch_url in archives.items():
+            print(f"    MoviesDrive: Scraping {q} from {arch_url}...")
+            try:
+                ep_dict = scrape_archive(arch_url)
+                for ep_num, links in ep_dict.items():
+                    if ep_num not in scraped_data:
+                        scraped_data[ep_num] = {}
+                    scraped_data[ep_num][q] = links
+            except Exception as e:
+                print(f"    [!] Error scraping MoviesDrive {q}: {e}")
     except Exception as e:
-        print(f"[!] Error fetching main page: {e}")
+        print(f"[!] MoviesDrive source note: {e}")
+
+    # Step 1.5: Also scrape Movies4u (faster updates for latest episodes)
+    try:
+        m4u_data = scrape_movies4u()
+        for ep_num, q_dict in m4u_data.items():
+            if ep_num not in scraped_data:
+                scraped_data[ep_num] = {}
+            for q, links in q_dict.items():
+                if q not in scraped_data[ep_num] or not scraped_data[ep_num][q].get("hubcloud"):
+                    scraped_data[ep_num][q] = links
+    except Exception as e:
+        print(f"[!] Movies4u source note: {e}")
+
+    if not scraped_data:
+        print("[!] No episodes found from any source. Exiting.")
         return False
-        
-    archives = extract_quality_archives(main_html)
-    print(f"[*] Found {len(archives)} quality archive URLs:")
-    for q in ["1080p", "720p", "480p"]:
-        print(f"    - {q}: {archives.get(q, 'NOT FOUND')}")
-        
-    if not archives:
-        print("[!] No quality archives found. Exiting.")
-        return False
-        
-    print("\n[*] Step 2: Scraping quality archives...")
-    scraped_data = {}  # { ep_num: { "1080p": {...}, "720p": {...}, "480p": {...} } }
-    
-    for q, arch_url in archives.items():
-        print(f"    Scraping {q} from {arch_url}...")
-        try:
-            ep_dict = scrape_archive(arch_url)
-            for ep_num, links in ep_dict.items():
-                if ep_num not in scraped_data:
-                    scraped_data[ep_num] = {}
-                scraped_data[ep_num][q] = links
-        except Exception as e:
-            print(f"    [!] Error scraping {q}: {e}")
-            
+
     all_ep_nums = sorted(scraped_data.keys(), reverse=True)
-    print(f"\n[*] Extracted episodes: {[f'EP {n}' for n in all_ep_nums]}")
+    print(f"\n[*] Total combined episodes found: {[f'EP {n}' for n in all_ep_nums]}")
     
     print("\n[*] Step 2.5: Fetching official JioHotstar metadata...")
     hotstar_meta = fetch_hotstar_metadata()
