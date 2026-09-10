@@ -11,29 +11,29 @@
   "episodes": [
     {
       "id": "bb-s20-e05",
-      "title": "Bigg Boss Season 20 Episode 5",
+      "title": "BBHin Day 04: Rewind! 20 Years of Bigg Boss",
       "season": 20,
       "episode": 5,
       "date": "10 Sep 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 5.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "duration": "1h 11m",
+      "description": "The captaincy task reaches its deciding stage, while new alliances hint at brewing politics. Further, the ‘Mahaul’ gets emotional as Bigg Boss’ 20-year legacy comes alive!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/1800/1789050551800-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
-          "size": "",
+          "size": "1.23 GB",
           "HubCloud-stream": "1xl4zifez66jnmu",
           "GDFlix-stream": "UUPe8PH1YbAat3t"
         },
         "720p": {
           "label": "720p HD",
-          "size": "",
+          "size": "628.63 MB",
           "HubCloud-stream": "juucupmqjapmpdq",
           "GDFlix-stream": "c7XX9YVv1V1MiHx"
         },
         "480p": {
           "label": "480p SD",
-          "size": "",
+          "size": "255.45 MB",
           "HubCloud-stream": "0y12woz1rt0mv30",
           "GDFlix-stream": "C5771nevA1Sh7ui"
         }
@@ -65,13 +65,14 @@
         },
         "480p": {
           "label": "480p SD",
-          "size": "",
+          "size": "240.66 MB",
           "HubCloud-stream": "yr0kzcrkbjiiiff",
           "GDFlix-stream": "qNvSeKPiACQSERX"
         }
       },
       "HubCloud-stream": "caxxlc3j8bl4ulw",
-      "GDFlix-stream": "BBnRgjsTnSvgzLO"
+      "GDFlix-stream": "BBnRgjsTnSvgzLO",
+      "hotstar_id": "1271696750"
     },
     {
       "id": "bb-s20-e03",
