@@ -191,11 +191,12 @@ def fetch_hotstar_metadata():
     episodes = {}
     global HOTSTAR_GUEST_TOKEN
 
-    # Method 1: Cloudflare Edge Worker API Gateway
+    # Method 1: Cloudflare Edge Worker API Gateway (with ?refresh=1 to bypass stale edge cache)
     for api_url in HOTSTAR_WORKER_APIS:
         try:
-            cmd = ["curl", "-s", "--max-time", "10", api_url]
-            p = subprocess.run(cmd, capture_output=True, text=True, timeout=12)
+            refresh_url = f"{api_url}?refresh=1&_cb={int(datetime.now().timestamp())}"
+            cmd = ["curl", "-s", "--max-time", "12", refresh_url]
+            p = subprocess.run(cmd, capture_output=True, text=True, timeout=15)
             if p.returncode == 0 and p.stdout:
                 data = json.loads(p.stdout)
                 if data.get("success") and data.get("episodes"):
@@ -354,12 +355,20 @@ def run_pipeline(dry_run=False, check_sizes=True, force=False):
     print("==================================================")
     
     if not force and not dry_run:
-        # Check 1: Has tonight's episode already been scraped?
-        if last_cycle == cycle_date:
-            print(f"\n[✓] Tonight's episode for cycle {cycle_date} is ALREADY scraped & published!")
+        # Check 1: Has tonight's episode already been scraped AND fully enriched with Hotstar metadata?
+        has_fallback_eps = any(
+            ep.get("title", "").startswith("Bigg Boss Season 20 Episode") or
+            "m.media-amazon.com" in ep.get("thumbnail", "") or
+            "astro.com.my" in ep.get("thumbnail", "")
+            for ep in existing_data.get("episodes", [])
+        )
+        if last_cycle == cycle_date and not has_fallback_eps:
+            print(f"\n[✓] Tonight's episode for cycle {cycle_date} is ALREADY scraped & fully enriched!")
             print(f"[*] Stopping early. Next run will seek new episodes tomorrow after 11:00 PM IST.")
             print(f"[*] (Use --force to bypass this check and scrape anyway)")
             return True
+        elif last_cycle == cycle_date and has_fallback_eps:
+            print(f"\n[*] Cycle {cycle_date} was scraped but has fallback metadata. Re-running to check Hotstar enrichment...")
             
         # Check 2: Outside airing window (daytime 6:00 AM to 10:30 PM IST)
         if 6 <= now_ist.hour < 22 or (now_ist.hour == 22 and now_ist.minute < 30):
@@ -581,11 +590,23 @@ def run_pipeline(dry_run=False, check_sizes=True, force=False):
         return True
         
     if changes_count > 0 or not os.path.exists(EPISODES_FILE):
-        existing_data["last_scraped_cycle"] = cycle_date
+        has_fallback_eps = any(
+            ep.get("title", "").startswith("Bigg Boss Season 20 Episode") or
+            "m.media-amazon.com" in ep.get("thumbnail", "") or
+            "astro.com.my" in ep.get("thumbnail", "")
+            for ep in updated_eps
+        )
+        if not has_fallback_eps:
+            existing_data["last_scraped_cycle"] = cycle_date
+            print(f"[✓] Marked night cycle {cycle_date} as fully completed!")
+        else:
+            # Clear or do not mark cycle complete so subsequent runs will auto-enrich
+            existing_data.pop("last_scraped_cycle", None)
+            print(f"[*] Notice: Some episodes still have fallback metadata. Night cycle will stay active for auto-enrichment on next run.")
+            
         with open(EPISODES_FILE, "w", encoding="utf-8") as f:
             json.dump(existing_data, f, indent=2, ensure_ascii=False)
         print(f"\n[✓] Successfully updated {EPISODES_FILE} with {len(updated_eps)} episodes ({changes_count} changes)!")
-        print(f"[✓] Marked night cycle {cycle_date} as completed!")
     else:
         print(f"\n[✓] No new episodes or ID changes found. {EPISODES_FILE} is already up to date.")
         
