@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e05",
+      "title": "Bigg Boss Season 20 Episode 5",
+      "season": 20,
+      "episode": 5,
+      "date": "10 Sep 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 5.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "1xl4zifez66jnmu",
+          "GDFlix-stream": "UUPe8PH1YbAat3t"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "juucupmqjapmpdq",
+          "GDFlix-stream": "c7XX9YVv1V1MiHx"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "0y12woz1rt0mv30",
+          "GDFlix-stream": "C5771nevA1Sh7ui"
+        }
+      },
+      "HubCloud-stream": "1xl4zifez66jnmu",
+      "GDFlix-stream": "UUPe8PH1YbAat3t"
+    },
+    {
       "id": "bb-s20-e04",
       "title": "BBHin Day 03: All Eyes on 'Pehla Kaptaan'",
       "season": 20,
@@ -22,24 +54,24 @@
         "1080p": {
           "label": "1080p FHD",
           "size": "1.26 GB",
-          "HubCloud-stream": "2hnvyfyhzxjyqdw",
-          "GDFlix-stream": "FoiV3LUd4cTMVX4"
+          "HubCloud-stream": "caxxlc3j8bl4ulw",
+          "GDFlix-stream": "BBnRgjsTnSvgzLO"
         },
         "720p": {
           "label": "720p HD",
           "size": "555.81 MB",
-          "HubCloud-stream": "yldiwfxk1kwbrxb",
-          "GDFlix-stream": "nbvlaAYsKEnv0BO"
+          "HubCloud-stream": "vnklla9vbbkmlam",
+          "GDFlix-stream": "cB7UebqZ0InjT3g"
         },
         "480p": {
           "label": "480p SD",
           "size": "",
-          "HubCloud-stream": null,
-          "GDFlix-stream": null
+          "HubCloud-stream": "yr0kzcrkbjiiiff",
+          "GDFlix-stream": "qNvSeKPiACQSERX"
         }
       },
-      "HubCloud-stream": "2hnvyfyhzxjyqdw",
-      "GDFlix-stream": "FoiV3LUd4cTMVX4"
+      "HubCloud-stream": "caxxlc3j8bl4ulw",
+      "GDFlix-stream": "BBnRgjsTnSvgzLO"
     },
     {
       "id": "bb-s20-e03",
@@ -141,5 +173,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-09-09"
+  "last_scraped_cycle": "2026-09-10"
 }
