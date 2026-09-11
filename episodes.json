@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e06",
+      "title": "BBHin Day 05: Rule Break? Discipline Check!",
+      "season": 20,
+      "episode": 6,
+      "date": "11 Sep 2026",
+      "duration": "1h 8m",
+      "description": "Captain Yung tries to keep Kanika in check over house rules, but their verbal spat drags the entire house. Further, a rule break by the boys triggers serious repercussions!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/9882/1789135299882-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "1pdp8ccjj8ipibp",
+          "GDFlix-stream": "QHtsFxST0AvfAeN"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "8i00g001xpt1h5i",
+          "GDFlix-stream": "uRVlwgjLi1dL1YC"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "kz1q7b11q0sumnp",
+          "GDFlix-stream": "Ma09tZbahQjRLlF"
+        }
+      },
+      "HubCloud-stream": "1pdp8ccjj8ipibp",
+      "GDFlix-stream": "QHtsFxST0AvfAeN"
+    },
+    {
       "id": "bb-s20-e05",
       "title": "BBHin Day 04: Rewind! 20 Years of Bigg Boss",
       "season": 20,
@@ -39,7 +71,8 @@
         }
       },
       "HubCloud-stream": "1xl4zifez66jnmu",
-      "GDFlix-stream": "UUPe8PH1YbAat3t"
+      "GDFlix-stream": "UUPe8PH1YbAat3t",
+      "hotstar_id": "1271696753"
     },
     {
       "id": "bb-s20-e04",
@@ -174,5 +207,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-09-10"
+  "last_scraped_cycle": "2026-09-11"
 }
