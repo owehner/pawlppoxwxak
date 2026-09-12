@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e07",
+      "title": "BBHin Day 06: Pehla Vaar! Ft. OG Rockstar",
+      "season": 20,
+      "episode": 7,
+      "date": "12 Sep 2026",
+      "duration": "1h 6m",
+      "description": "Pehla, pehla ‘Vaar’ hain! Salman Khan brings his ‘rockstar’ energy to the stage as he praises Qazi’s performance. Alongside a few reality checks, follow a series of fun tasks.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/7013/1789223207013-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "rw4duultzu6oorw",
+          "GDFlix-stream": "QmV4t5oPeBis4wA"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "6xl8q21ase1ytyx",
+          "GDFlix-stream": "j60CXR9YQJhHyWZ"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "n0hzdiuu2driucr",
+          "GDFlix-stream": "Mhdu7Xg9st1rwPv"
+        }
+      },
+      "HubCloud-stream": "rw4duultzu6oorw",
+      "GDFlix-stream": "QmV4t5oPeBis4wA"
+    },
+    {
       "id": "bb-s20-e06",
       "title": "BBHin Day 05: Rule Break? Discipline Check!",
       "season": 20,
@@ -39,7 +71,8 @@
         }
       },
       "HubCloud-stream": "1pdp8ccjj8ipibp",
-      "GDFlix-stream": "QHtsFxST0AvfAeN"
+      "GDFlix-stream": "QHtsFxST0AvfAeN",
+      "hotstar_id": "1271696754"
     },
     {
       "id": "bb-s20-e05",
@@ -207,5 +240,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-09-11"
+  "last_scraped_cycle": "2026-09-12"
 }
