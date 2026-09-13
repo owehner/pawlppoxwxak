@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e08",
+      "title": "BBHin Day 07: Gajab Beizzati, Peak Masti",
+      "season": 20,
+      "episode": 8,
+      "date": "13 Sep 2026",
+      "duration": "1h 30m",
+      "description": "It’s time for ‘Gajab Beizzati’ as Aasif takes on a roasting challenge. The fun continues with Yung and Mahi playing matchmakers, while Salman readies to announce Janta’s faisla!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/501/1789311930501-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "11hdsohnoofnjcz",
+          "GDFlix-stream": "c3dEPoVqi4hqt6A"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": null,
+          "GDFlix-stream": null
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": null,
+          "GDFlix-stream": null
+        }
+      },
+      "HubCloud-stream": "11hdsohnoofnjcz",
+      "GDFlix-stream": "c3dEPoVqi4hqt6A"
+    },
+    {
       "id": "bb-s20-e07",
       "title": "BBHin Day 06: Pehla Vaar! Ft. OG Rockstar",
       "season": 20,
@@ -39,7 +71,8 @@
         }
       },
       "HubCloud-stream": "rw4duultzu6oorw",
-      "GDFlix-stream": "QmV4t5oPeBis4wA"
+      "GDFlix-stream": "QmV4t5oPeBis4wA",
+      "hotstar_id": "1271696757"
     },
     {
       "id": "bb-s20-e06",
@@ -240,5 +273,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-09-12"
+  "last_scraped_cycle": "2026-09-13"
 }
