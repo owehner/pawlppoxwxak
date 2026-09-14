@@ -10,12 +10,44 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e09",
+      "title": "BBHin Day 08: Secrets Out! Sparks Fly",
+      "season": 20,
+      "episode": 9,
+      "date": "14 Sep 2026",
+      "duration": "1h 8m",
+      "description": "Uditi and Aasif clash while nomination drama engulfs the Gharwaales. Bigg Boss exposes hidden strategies plotted by a few housemates, leading to a fiery post-nomination fight.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/8077/1789392778077-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "vsdnoe6nu1gddtl",
+          "GDFlix-stream": "I58chLu52fDuBfg"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "k5b4ibqapojpcdc",
+          "GDFlix-stream": "S4GMXgT4qus5PfU"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "jhbnjytrjb1n2hy",
+          "GDFlix-stream": "iPtrituqhaORK5i"
+        }
+      },
+      "HubCloud-stream": "vsdnoe6nu1gddtl",
+      "GDFlix-stream": "I58chLu52fDuBfg"
+    },
+    {
       "id": "bb-s20-e08",
       "title": "BBHin Day 07: Gajab Beizzati, Peak Masti",
       "season": 20,
       "episode": 8,
       "date": "13 Sep 2026",
-      "duration": "1h 30m",
+      "duration": "1h 7m",
       "description": "It’s time for ‘Gajab Beizzati’ as Aasif takes on a roasting challenge. The fun continues with Yung and Mahi playing matchmakers, while Salman readies to announce Janta’s faisla!",
       "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/501/1789311930501-h",
       "qualities": {
@@ -28,18 +60,19 @@
         "720p": {
           "label": "720p HD",
           "size": "",
-          "HubCloud-stream": null,
-          "GDFlix-stream": null
+          "HubCloud-stream": "rjmoofwynocjmwo",
+          "GDFlix-stream": "cqG7klqkW6U5jkK"
         },
         "480p": {
           "label": "480p SD",
           "size": "",
-          "HubCloud-stream": null,
-          "GDFlix-stream": null
+          "HubCloud-stream": "dsrftzxox5nd13g",
+          "GDFlix-stream": "ITHNowo39ryXR9h"
         }
       },
       "HubCloud-stream": "11hdsohnoofnjcz",
-      "GDFlix-stream": "c3dEPoVqi4hqt6A"
+      "GDFlix-stream": "c3dEPoVqi4hqt6A",
+      "hotstar_id": "1271696759"
     },
     {
       "id": "bb-s20-e07",
@@ -273,5 +306,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-09-13"
+  "last_scraped_cycle": "2026-09-14"
 }
