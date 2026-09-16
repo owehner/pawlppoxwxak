@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e11",
+      "title": "Bigg Boss Season 20 Episode 11",
+      "season": 20,
+      "episode": 11,
+      "date": "16 Sep 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 11.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "rqs0bsq8lzsoyp7",
+          "GDFlix-stream": "RrNRysdHW7BzdWl"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "jsurfkzancftd3k",
+          "GDFlix-stream": "MX23x3UkWUW7kYd"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "dlofelak1ag8ojk",
+          "GDFlix-stream": "SUu06vOax84mqnV"
+        }
+      },
+      "HubCloud-stream": "rqs0bsq8lzsoyp7",
+      "GDFlix-stream": "RrNRysdHW7BzdWl"
+    },
+    {
       "id": "bb-s20-e10",
       "title": "BBHin Day 09: Rang Mein Bhang, Ghar Mein Jung",
       "season": 20,
