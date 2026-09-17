@@ -11,13 +11,13 @@
   "episodes": [
     {
       "id": "bb-s20-e11",
-      "title": "Bigg Boss Season 20 Episode 11",
+      "title": "BBHin Day 10: Loyalties Put to the Test",
       "season": 20,
       "episode": 11,
       "date": "16 Sep 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 11.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "duration": "1h 8m",
+      "description": "Mahi's support for a rival strains her bond with Yung while Amrapali calls out Lovepreet's loyalty. Boys get their final captaincy pick. How will the girls decide theirs?",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/2935/1789573502935-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -39,7 +39,8 @@
         }
       },
       "HubCloud-stream": "rqs0bsq8lzsoyp7",
-      "GDFlix-stream": "RrNRysdHW7BzdWl"
+      "GDFlix-stream": "RrNRysdHW7BzdWl",
+      "hotstar_id": "1271702310"
     },
     {
       "id": "bb-s20-e10",
@@ -49,7 +50,7 @@
       "date": "15 Sep 2026",
       "duration": "1h 8m",
       "description": "Amrapali and Mahi's food fight sparks a house-wide clash! Captaincy ki daawedari shuru as Gharwaales pick sides. Post the task, Arishfa and Scout's argument becomes chaotic.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/8595/1789480088595-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -371,5 +372,6 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ]
+  ],
+  "last_scraped_cycle": "2026-09-17"
 }

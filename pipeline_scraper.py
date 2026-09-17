@@ -367,11 +367,10 @@ def run_pipeline(dry_run=False, check_sizes=True, force=False):
             print(f"[*] Stopping early. Next run will seek new episodes tomorrow after 11:00 PM IST.")
             print(f"[*] (Use --force to bypass this check and scrape anyway)")
             return True
-        elif last_cycle == cycle_date and has_fallback_eps:
-            print(f"\n[*] Cycle {cycle_date} was scraped but has fallback metadata. Re-running to check Hotstar enrichment...")
-            
-        # Check 2: Outside airing window (daytime 6:00 AM to 10:30 PM IST)
-        if 6 <= now_ist.hour < 22 or (now_ist.hour == 22 and now_ist.minute < 30):
+        elif has_fallback_eps:
+            print(f"\n[*] Some episodes have fallback metadata. Proceeding to check Hotstar enrichment...")
+        elif 6 <= now_ist.hour < 22 or (now_ist.hour == 22 and now_ist.minute < 30):
+            # Check 2: Outside airing window (daytime 6:00 AM to 10:30 PM IST) and no fallback episodes
             print(f"\n[*] Daytime ({now_ist.strftime('%I:%M %p IST')}): Episodes air daily after 10:30 PM IST.")
             print(f"[*] Scraper will automatically activate tonight at 11:00 PM IST.")
             print(f"[*] (Use --force to bypass this check and scrape anyway)")
@@ -459,15 +458,24 @@ def run_pipeline(dry_run=False, check_sizes=True, force=False):
                 if not ep_obj.get("description") or "Catch all the uncut drama" in ep_obj.get("description", ""):
                     ep_obj["description"] = hs_info["description"]
                     changes_count += 1
-                if not ep_obj.get("thumbnail") or "backdrop" in ep_obj.get("thumbnail", "") or "m.media-amazon.com" in ep_obj.get("thumbnail", ""):
-                    ep_obj["thumbnail"] = hs_info["thumbnail"]
-                    changes_count += 1
+                current_thumb = ep_obj.get("thumbnail", "")
+                if not current_thumb or "astro.com.my" in current_thumb or "m.media-amazon.com" in current_thumb or "backdrop" in current_thumb or "hotstar.com" not in current_thumb:
+                    if hs_info.get("thumbnail") and current_thumb != hs_info["thumbnail"]:
+                        ep_obj["thumbnail"] = hs_info["thumbnail"]
+                        changes_count += 1
+                        print(f"    [HOTSTAR] Enriched Episode {ep_num} thumbnail -> {hs_info['thumbnail']}")
                 if hs_info.get("date") and (not ep_obj.get("date") or ep_obj.get("date") == datetime.now().strftime("%d %b %Y")):
-                    ep_obj["date"] = hs_info["date"]
+                    if ep_obj.get("date") != hs_info["date"]:
+                        ep_obj["date"] = hs_info["date"]
+                        changes_count += 1
                 if hs_info.get("duration") and (not ep_obj.get("duration") or ep_obj.get("duration") == "1h 30m"):
-                    ep_obj["duration"] = hs_info["duration"]
+                    if ep_obj.get("duration") != hs_info["duration"]:
+                        ep_obj["duration"] = hs_info["duration"]
+                        changes_count += 1
                 if hs_info.get("hotstar_id"):
-                    ep_obj["hotstar_id"] = hs_info["hotstar_id"]
+                    if ep_obj.get("hotstar_id") != hs_info["hotstar_id"]:
+                        ep_obj["hotstar_id"] = hs_info["hotstar_id"]
+                        changes_count += 1
                 
             for q_name, q_links, default_label in [
                 ("1080p", q1080, "1080p FHD"),
