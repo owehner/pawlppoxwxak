@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e13",
+      "title": "BBHin Day 12: A Risky Ration Quiz",
+      "season": 20,
+      "episode": 13,
+      "date": "18 Sep 2026",
+      "duration": "1h 8m",
+      "description": "Lovepreet's remark upsets Amrapali, while Mahi and Uditi question Mary's contribution. During the Ration Quiz, can the Gharwaales match Gullu's answers?",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/4463/1789741204463-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "qq1qjc4so1ohdmz",
+          "GDFlix-stream": "oVab6KcEhVS9STa"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "2w9tbr2q9ggfmff",
+          "GDFlix-stream": "qLf64E3Xfz84tEi"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "piujielpry6utu6",
+          "GDFlix-stream": "leeCjFhwLwbroaS"
+        }
+      },
+      "HubCloud-stream": "qq1qjc4so1ohdmz",
+      "GDFlix-stream": "oVab6KcEhVS9STa"
+    },
+    {
       "id": "bb-s20-e12",
       "title": "BBHin Day 11: Captaincy Chaos Erupts",
       "season": 20,
