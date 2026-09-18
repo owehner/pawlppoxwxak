@@ -354,27 +354,7 @@ def run_pipeline(dry_run=False, check_sizes=True, force=False):
     print(f"  Active Night Cycle: {cycle_date}")
     print("==================================================")
     
-    if not force and not dry_run:
-        # Check 1: Has tonight's episode already been scraped AND fully enriched with Hotstar metadata?
-        has_fallback_eps = any(
-            ep.get("title", "").startswith("Bigg Boss Season 20 Episode") or
-            "m.media-amazon.com" in ep.get("thumbnail", "") or
-            "astro.com.my" in ep.get("thumbnail", "")
-            for ep in existing_data.get("episodes", [])
-        )
-        if last_cycle == cycle_date and not has_fallback_eps:
-            print(f"\n[✓] Tonight's episode for cycle {cycle_date} is ALREADY scraped & fully enriched!")
-            print(f"[*] Stopping early. Next run will seek new episodes tomorrow after 11:00 PM IST.")
-            print(f"[*] (Use --force to bypass this check and scrape anyway)")
-            return True
-        elif has_fallback_eps:
-            print(f"\n[*] Some episodes have fallback metadata. Proceeding to check Hotstar enrichment...")
-        elif 6 <= now_ist.hour < 22 or (now_ist.hour == 22 and now_ist.minute < 30):
-            # Check 2: Outside airing window (daytime 6:00 AM to 10:30 PM IST) and no fallback episodes
-            print(f"\n[*] Daytime ({now_ist.strftime('%I:%M %p IST')}): Episodes air daily after 10:30 PM IST.")
-            print(f"[*] Scraper will automatically activate tonight at 11:00 PM IST.")
-            print(f"[*] (Use --force to bypass this check and scrape anyway)")
-            return True
+
 
     print(f"[*] Step 1: Fetching quality archives from primary source (MoviesDrive)...")
     scraped_data = {}  # { ep_num: { "1080p": {...}, "720p": {...}, "480p": {...} } }

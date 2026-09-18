@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e12",
+      "title": "Bigg Boss Season 20 Episode 12",
+      "season": 20,
+      "episode": 12,
+      "date": "18 Sep 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 12.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "tlxanuyasx8ound",
+          "GDFlix-stream": "cBH6sszmt4N46EW"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "abbsdwdzffjskrr",
+          "GDFlix-stream": "qwxmy1b7PEHBHcf"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "ejdheu14yj4qoi4",
+          "GDFlix-stream": "S2sjfypWuo7PDsM"
+        }
+      },
+      "HubCloud-stream": "tlxanuyasx8ound",
+      "GDFlix-stream": "cBH6sszmt4N46EW"
+    },
+    {
       "id": "bb-s20-e11",
       "title": "BBHin Day 10: Loyalties Put to the Test",
       "season": 20,
@@ -372,6 +404,5 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ],
-  "last_scraped_cycle": "2026-09-17"
+  ]
 }
