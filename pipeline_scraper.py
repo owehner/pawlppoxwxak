@@ -211,24 +211,33 @@ def fetch_hotstar_metadata():
         except Exception as e:
             print(f"[*] Worker API {api_url} note: {e}")
 
-    # Method 2: Direct Hotstar Official BFF API via curl (always checks for latest released episodes)
-    cmd = [
-        "curl", "-s", "--compressed",
-        "-H", f"x-hs-usertoken: {HOTSTAR_GUEST_TOKEN}",
-        "-H", "x-hs-device-id: 3a061e-110c3c-15d9ae-1a600a",
-        "-H", "x-hs-platform: web",
-        "-H", "x-country-code: in",
-        "-H", "accept-language: eng",
-        "-H", "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
-        HOTSTAR_BFF_API
-    ]
-
-    new_found = False
+    # Method 2: Direct Hotstar Official BFF API with Pagination via curl
     try:
-        p = subprocess.run(cmd, capture_output=True, text=True, timeout=15)
-        if p.returncode == 0 and p.stdout:
-            data = json.loads(p.stdout)
-            items = data.get("success", {}).get("widget_wrapper", {}).get("widget", {}).get("data", {}).get("items", [])
+        current_bff_url = HOTSTAR_BFF_API
+        pages_fetched = 0
+        new_found = False
+        while current_bff_url and pages_fetched < 5:
+            pages_fetched += 1
+            cmd = [
+                "curl", "-s", "--compressed",
+                "-H", f"x-hs-usertoken: {HOTSTAR_GUEST_TOKEN}",
+                "-H", "x-hs-device-id: 3a061e-110c3c-15d9ae-1a600a",
+                "-H", "x-hs-platform: web",
+                "-H", "x-country-code: in",
+                "-H", "accept-language: eng",
+                "-H", "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+                current_bff_url
+            ]
+            p = subprocess.run(cmd, capture_output=True, text=True, timeout=15)
+            if p.returncode != 0 or not p.stdout:
+                break
+            try:
+                data = json.loads(p.stdout)
+            except Exception:
+                break
+
+            widget_data = data.get("success", {}).get("widget_wrapper", {}).get("widget", {}).get("data", {})
+            items = widget_data.get("items", [])
             for it in items:
                 d = it.get("playable_content", {}).get("data", {})
                 ep_num = None
@@ -256,22 +265,24 @@ def fetch_hotstar_metadata():
                         "hotstar_id": d.get("content_id", "")
                     }
                     new_found = True
-                    print(f"[*] Found newest Hotstar metadata directly: Ep {ep_num} -> {d.get('title')}")
-            
-            if new_found:
-                try:
-                    sync_payload = json.dumps({"episodes": {str(k): v for k, v in episodes.items()}})
-                    subprocess.run(["curl", "-s", "-X", "POST", "-H", "Content-Type: application/json", "-d", sync_payload, "https://bb.kalyug.dpdns.org/api/hotstar"], timeout=5)
-                except Exception:
-                    pass
-    except Exception:
-        pass
+                    print(f"[*] Found Hotstar metadata directly: Ep {ep_num} -> {d.get('title')}")
 
-    if episodes:
-        print(f"[*] Successfully retrieved {len(episodes)} episodes metadata from Hotstar!")
-        return episodes
+            next_tray = widget_data.get("next_tray_url")
+            if next_tray:
+                current_bff_url = f"https://www.hotstar.com/api/internal/bff{next_tray}" if next_tray.startswith("/") else next_tray
+            else:
+                current_bff_url = None
 
-    # Method 2: Googlebot Next.js SSR Fallback via curl
+        if new_found:
+            try:
+                sync_payload = json.dumps({"episodes": {str(k): v for k, v in episodes.items()}})
+                subprocess.run(["curl", "-s", "-X", "POST", "-H", "Content-Type: application/json", "-d", sync_payload, "https://bb.kalyug.dpdns.org/api/hotstar"], timeout=5)
+            except Exception:
+                pass
+    except Exception as e:
+        print(f"[*] Hotstar BFF API error: {e}")
+
+    # Method 3: Googlebot Next.js SSR Fallback via curl
     try:
         cmd_ssr = [
             "curl", "-s", "--compressed",
@@ -282,41 +293,54 @@ def fetch_hotstar_metadata():
         if p_ssr.returncode == 0 and p_ssr.stdout:
             m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', p_ssr.stdout)
             if m:
-                s = m.group(1)
-                for m_match in re.finditer(r'"playable_content":\s*\{[^}]*"data":\s*(\{.*?\})\s*\}\s*\}', s):
-                    try:
-                        d = json.loads(m_match.group(1))
-                        ep_num = None
-                        air_date = ""
-                        duration = ""
-                        for tag in d.get("tags", []):
-                            val = tag.get("value", "")
-                            m_ep = re.search(r"E(\d+)", val)
-                            if m_ep:
-                                ep_num = int(m_ep.group(1))
-                            elif any(month in val for month in ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]):
-                                air_date = val
-                            elif "m" in val or "h" in val:
-                                duration = val
+                def extract_playables(obj):
+                    if not obj or not isinstance(obj, (dict, list)):
+                        return
+                    if isinstance(obj, dict):
+                        if "playable_content" in obj and "data" in obj["playable_content"]:
+                            d = obj["playable_content"]["data"]
+                            ep_num = None
+                            air_date = ""
+                            duration = ""
+                            for tag in d.get("tags", []):
+                                val = tag.get("value", "")
+                                m_ep = re.search(r"E(\d+)", val)
+                                if m_ep:
+                                    ep_num = int(m_ep.group(1))
+                                elif any(month in val for month in ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]):
+                                    air_date = val
+                                elif "m" in val or "h" in val:
+                                    duration = val
 
-                        if ep_num is not None:
-                            poster_src = d.get("poster", {}).get("src", "")
-                            img_url = f"https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/{poster_src}" if poster_src else ""
-                            episodes[ep_num] = {
-                                "title": d.get("title", ""),
-                                "description": d.get("description", ""),
-                                "thumbnail": img_url,
-                                "date": air_date,
-                                "duration": duration,
-                                "hotstar_id": d.get("content_id", "")
-                            }
-                    except Exception:
-                        pass
-        if episodes:
-            print(f"[*] Successfully retrieved {len(episodes)} episodes metadata from Hotstar SSR Fallback!")
-            return episodes
+                            if ep_num is not None and (ep_num not in episodes or not episodes[ep_num].get("title")):
+                                poster_src = d.get("poster", {}).get("src", "")
+                                img_url = f"https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/{poster_src}" if poster_src else ""
+                                episodes[ep_num] = {
+                                    "title": d.get("title", ""),
+                                    "description": d.get("description", ""),
+                                    "thumbnail": img_url,
+                                    "date": air_date,
+                                    "duration": duration,
+                                    "hotstar_id": d.get("content_id", "")
+                                }
+                                print(f"[*] Found SSR Hotstar metadata: Ep {ep_num} -> {d.get('title')}")
+                        for v in obj.values():
+                            extract_playables(v)
+                    elif isinstance(obj, list):
+                        for it in obj:
+                            extract_playables(it)
+
+                try:
+                    next_json = json.loads(m.group(1))
+                    extract_playables(next_json)
+                except Exception:
+                    pass
     except Exception as e:
         print(f"[*] Hotstar SSR Fallback error: {e}")
+
+    if episodes:
+        print(f"[*] Successfully retrieved {len(episodes)} episodes metadata from Hotstar!")
+        return episodes
 
     return episodes
 

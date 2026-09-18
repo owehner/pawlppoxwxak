@@ -11,13 +11,13 @@
   "episodes": [
     {
       "id": "bb-s20-e12",
-      "title": "Bigg Boss Season 20 Episode 12",
+      "title": "BBHin Day 11: Captaincy Chaos Erupts",
       "season": 20,
       "episode": 12,
-      "date": "18 Sep 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 12.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "date": "17 Sep 2026",
+      "duration": "1h 9m",
+      "description": "A shocking elimination from the captaincy task leads to betrayals, heated fights, and provocative remarks between the Gharwaales. Eventually, the house crowns its new Captain!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/2603/1789656042603-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -39,7 +39,8 @@
         }
       },
       "HubCloud-stream": "tlxanuyasx8ound",
-      "GDFlix-stream": "cBH6sszmt4N46EW"
+      "GDFlix-stream": "cBH6sszmt4N46EW",
+      "hotstar_id": "1271702311"
     },
     {
       "id": "bb-s20-e11",
@@ -404,5 +405,6 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ]
+  ],
+  "last_scraped_cycle": "2026-09-18"
 }
