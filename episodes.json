@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e15",
+      "title": "Bigg Boss Season 20 Episode 15",
+      "season": 20,
+      "episode": 15,
+      "date": "20 Sep 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 15.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "gct8m8ucfb8ctr2",
+          "GDFlix-stream": "eCYcuRLCVUzLmFd"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": null,
+          "GDFlix-stream": null
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": null,
+          "GDFlix-stream": null
+        }
+      },
+      "HubCloud-stream": "gct8m8ucfb8ctr2",
+      "GDFlix-stream": "eCYcuRLCVUzLmFd"
+    },
+    {
       "id": "bb-s20-e14",
       "title": "BBHin Day 13: Salman Laye Hain 'Sach Ki Topi'",
       "season": 20,
@@ -471,6 +503,5 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ],
-  "last_scraped_cycle": "2026-09-20"
+  ]
 }
