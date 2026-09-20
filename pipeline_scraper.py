@@ -20,7 +20,7 @@ import urllib.error
 from datetime import datetime
 
 # Default URLs & Config
-MAIN_URL = "https://new3.moviesdrive.christmas/bigg-boss-season-20-2026/"
+MAIN_URL = "https://new4.moviesdrive.christmas/bigg-boss-season-20-2026/"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 if os.path.exists(os.path.join(BASE_DIR, "public", "episodes.json")):
     EPISODES_FILE = os.path.join(BASE_DIR, "public", "episodes.json")
@@ -34,7 +34,15 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.5"
 }
 
-def fetch_url(url, timeout=20):
+def fetch_url(url, timeout=15):
+    import subprocess
+    cmd = ["curl", "-s", "-L", "--max-time", str(timeout), "-H", f"User-Agent: {HEADERS['User-Agent']}", url]
+    try:
+        p = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout + 2)
+        if p.returncode == 0 and p.stdout:
+            return p.stdout
+    except Exception:
+        pass
     req = urllib.request.Request(url, headers=HEADERS)
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         return resp.read().decode("utf-8", errors="ignore")

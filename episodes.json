@@ -11,13 +11,13 @@
   "episodes": [
     {
       "id": "bb-s20-e14",
-      "title": "Bigg Boss Season 20 Episode 14",
+      "title": "BBHin Day 13: Salman Laye Hain 'Sach Ki Topi'",
       "season": 20,
       "episode": 14,
       "date": "19 Sep 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 14.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "duration": "1h 6m",
+      "description": "Salman settles the clashes in the house with Sach Ki Topi. Scout gets schooled and Aasif's aggression is called out. A shocking move awaits the Gharwaales!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/4261/1789832354261-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -39,7 +39,8 @@
         }
       },
       "HubCloud-stream": "dd4ynlvrjbn1atk",
-      "GDFlix-stream": "iaHYbPR2eaUu3y6"
+      "GDFlix-stream": "iaHYbPR2eaUu3y6",
+      "hotstar_id": "1271702313"
     },
     {
       "id": "bb-s20-e13",
@@ -470,5 +471,6 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ]
+  ],
+  "last_scraped_cycle": "2026-09-20"
 }
