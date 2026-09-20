@@ -28,14 +28,14 @@
         "720p": {
           "label": "720p HD",
           "size": "",
-          "HubCloud-stream": null,
-          "GDFlix-stream": null
+          "HubCloud-stream": "ankmau16ma3siph",
+          "GDFlix-stream": "8lANjGJAZNcRovo"
         },
         "480p": {
           "label": "480p SD",
           "size": "",
-          "HubCloud-stream": null,
-          "GDFlix-stream": null
+          "HubCloud-stream": "2rrrpofpobommrj",
+          "GDFlix-stream": "ys3Zy8Oz1j0sQKi"
         }
       },
       "HubCloud-stream": "gct8m8ucfb8ctr2",
