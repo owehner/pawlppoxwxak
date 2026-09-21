@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e16",
+      "title": "Bigg Boss Season 20 Episode 16",
+      "season": 20,
+      "episode": 16,
+      "date": "21 Sep 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 16.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "7omp5ips5lse7qs",
+          "GDFlix-stream": "qDflzYt7yNMqEgu"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "olvtfpzv675p18z",
+          "GDFlix-stream": "gvAJma6o5sEh51G"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "pzqdh467lb11tgl",
+          "GDFlix-stream": "ABe3VLbnolyxH42"
+        }
+      },
+      "HubCloud-stream": "7omp5ips5lse7qs",
+      "GDFlix-stream": "qDflzYt7yNMqEgu"
+    },
+    {
       "id": "bb-s20-e15",
       "title": "BBHin Day 14: Entertainment, Elimination, Exposé",
       "season": 20,
@@ -504,6 +536,5 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ],
-  "last_scraped_cycle": "2026-09-20"
+  ]
 }
