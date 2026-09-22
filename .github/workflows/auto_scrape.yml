@@ -6,8 +6,8 @@ on:
     - cron: "30,50 17 * * *"
     - cron: "*/20 18-20 * * *"
     - cron: "10,30,50 21 * * *"
-    # Daytime runs for Hotstar metadata enrichment (11:00 AM, 1:30 PM, 4:30 PM, 7:30 PM IST)
-    - cron: "30 5,8,11,14 * * *"
+    # Daytime & evening runs for Hotstar metadata enrichment (Every 30 mins between 11:30 AM IST and 10:00 PM IST)
+    - cron: "0,30 6-16 * * *"
   workflow_dispatch:
     inputs:
       force:
