@@ -11,13 +11,13 @@
   "episodes": [
     {
       "id": "bb-s20-e16",
-      "title": "Bigg Boss Season 20 Episode 16",
+      "title": "BBHin Day 15: Nominations with a Twist!",
       "season": 20,
       "episode": 16,
       "date": "21 Sep 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 16.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "duration": "1h 8m",
+      "description": "Equations between the Gharwaales are put to the test as the Nominations begin. With rations dwindling, Bigg Boss offers a luxury basket, but it comes at a very high cost.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/7371/1790000657371-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -39,7 +39,8 @@
         }
       },
       "HubCloud-stream": "7omp5ips5lse7qs",
-      "GDFlix-stream": "qDflzYt7yNMqEgu"
+      "GDFlix-stream": "qDflzYt7yNMqEgu",
+      "hotstar_id": "1271702315"
     },
     {
       "id": "bb-s20-e15",
@@ -536,5 +537,6 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ]
+  ],
+  "last_scraped_cycle": "2026-09-22"
 }
