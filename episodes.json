@@ -11,13 +11,13 @@
   "episodes": [
     {
       "id": "bb-s20-e17",
-      "title": "Bigg Boss Season 20 Episode 17",
+      "title": "BBHin Day 16: Kaun Top, Kaun Flop?",
       "season": 20,
       "episode": 17,
       "date": "22 Sep 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 17.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "duration": "1h 1m",
+      "description": "The rift between the groups deepens as Yung and Aman’s clash takes an ugly turn. But the chaos is just getting started as the Gharwaales must rank each other in the ration task!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/5603/1790087625603-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -39,7 +39,8 @@
         }
       },
       "HubCloud-stream": "0zltoqeqqf25qpk",
-      "GDFlix-stream": "h2nwTIEpkvVlxD7"
+      "GDFlix-stream": "h2nwTIEpkvVlxD7",
+      "hotstar_id": "1271702316"
     },
     {
       "id": "bb-s20-e16",
@@ -569,5 +570,6 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ]
+  ],
+  "last_scraped_cycle": "2026-09-22"
 }
