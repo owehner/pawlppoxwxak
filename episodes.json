@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e19",
+      "title": "BBHin Day 18: Ulta Prachar, Race Se Bahar!",
+      "season": 20,
+      "episode": 19,
+      "date": "24 Sep 2026",
+      "duration": "1h 10m",
+      "description": "The diss battle nears a banger climax, and the house gets its captaincy contenders! But the Gharwaales will take the final call. Who’ll face rejection, and who’ll ace this race?",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/4980/1790262154980-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "31ikk1a52dittqw",
+          "GDFlix-stream": "cB5lFx8Ul6K7I7M"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "f3rclhdc31ovbrb",
+          "GDFlix-stream": "Bj6ScYo0jdPA9yy"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "ybbnp4tvbywbt4t",
+          "GDFlix-stream": "TaKKitHLL9asav6"
+        }
+      },
+      "HubCloud-stream": "31ikk1a52dittqw",
+      "GDFlix-stream": "cB5lFx8Ul6K7I7M"
+    },
+    {
       "id": "bb-s20-e18",
       "title": "BBHin Day 17: Diss Battle - Pyaar Se Vaar!",
       "season": 20,
@@ -604,5 +636,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-09-23"
+  "last_scraped_cycle": "2026-09-24"
 }
