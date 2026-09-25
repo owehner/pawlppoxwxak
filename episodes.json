@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e20",
+      "title": "BBHin Day 19: And the New Captain Is…",
+      "season": 20,
+      "episode": 20,
+      "date": "25 Sep 2026",
+      "duration": "1h 12m",
+      "description": "The Gharwaales rally behind their favourite Daavedaar in the final captaincy match, where Yung and Qazi lock horns! But the big question—who’ll bag the coveted captainship?",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/8130/1790348448130-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "0idgpvwpy88ib1r",
+          "GDFlix-stream": "5E5ljbkIjZlQDUu"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "t8luplqvqctt8jj",
+          "GDFlix-stream": "qdAMeEJ9nISXhIa"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "pbkugbgj1purupz",
+          "GDFlix-stream": "tOKDo196AKUnOuj"
+        }
+      },
+      "HubCloud-stream": "0idgpvwpy88ib1r",
+      "GDFlix-stream": "5E5ljbkIjZlQDUu"
+    },
+    {
       "id": "bb-s20-e19",
       "title": "BBHin Day 18: Ulta Prachar, Race Se Bahar!",
       "season": 20,
@@ -637,5 +669,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-09-24"
+  "last_scraped_cycle": "2026-09-25"
 }
