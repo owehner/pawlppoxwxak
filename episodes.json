@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e21",
+      "title": "Bigg Boss Season 20 Episode 21",
+      "season": 20,
+      "episode": 21,
+      "date": "26 Sep 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 21.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "8rmub6rgt1vwsh0",
+          "GDFlix-stream": "5uvBFLlK9UXfr4Z"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "txvlqqpa9fm5pqr",
+          "GDFlix-stream": "n5BXVaqBbCVAAnP"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "dabeqqjdu4qbapb",
+          "GDFlix-stream": "7SOtO4SGUuJIRe0"
+        }
+      },
+      "HubCloud-stream": "8rmub6rgt1vwsh0",
+      "GDFlix-stream": "5uvBFLlK9UXfr4Z"
+    },
+    {
       "id": "bb-s20-e20",
       "title": "BBHin Day 19: And the New Captain Is…",
       "season": 20,
@@ -669,6 +701,5 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ],
-  "last_scraped_cycle": "2026-09-25"
+  ]
 }
