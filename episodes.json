@@ -10,14 +10,46 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e24",
+      "title": "Bigg Boss Season 20 Episode 24",
+      "season": 20,
+      "episode": 24,
+      "date": "29 Sep 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 24.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "oxlaxgo3tkhgakg",
+          "GDFlix-stream": "BwoTMFThh2CSLnz"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "shplswdadhaxdjt",
+          "GDFlix-stream": "hA9OMs3UngLDFa7"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "ppix8liwswobo38",
+          "GDFlix-stream": "uOR0du25TQIBbj4"
+        }
+      },
+      "HubCloud-stream": "oxlaxgo3tkhgakg",
+      "GDFlix-stream": "BwoTMFThh2CSLnz"
+    },
+    {
       "id": "bb-s20-e23",
-      "title": "Bigg Boss Season 20 Episode 23",
+      "title": "BBHin Day 22: Room 2X - Double the Twists!",
       "season": 20,
       "episode": 23,
       "date": "28 Sep 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 23.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "duration": "1h 7m",
+      "description": "The doors to Room 2X open, granting captain Gullu the power of ‘Jeevandan’. While he leverages this game-changing power, BB drops another bomb with the new nomination twist!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/9009/1790606189009-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -39,7 +71,8 @@
         }
       },
       "HubCloud-stream": "0aj0ybd07a7ia0j",
-      "GDFlix-stream": "spUtFm6w0m6tCoU"
+      "GDFlix-stream": "spUtFm6w0m6tCoU",
+      "hotstar_id": "1271702322"
     },
     {
       "id": "bb-s20-e22",
