@@ -11,13 +11,13 @@
   "episodes": [
     {
       "id": "bb-s20-e24",
-      "title": "Bigg Boss Season 20 Episode 24",
+      "title": "BBHin Day 23: Mission Ration, Phir Captain?",
       "season": 20,
       "episode": 24,
       "date": "29 Sep 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 24.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "duration": "1h 8m",
+      "description": "As old bonds take a hit, the house dynamics begin to change! Fierce face-offs follow in the captaincy contendership task, where captaincy and ration are up for grabs.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/2606/1790693562606-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -39,7 +39,8 @@
         }
       },
       "HubCloud-stream": "oxlaxgo3tkhgakg",
-      "GDFlix-stream": "BwoTMFThh2CSLnz"
+      "GDFlix-stream": "BwoTMFThh2CSLnz",
+      "hotstar_id": "1271702323"
     },
     {
       "id": "bb-s20-e23",
@@ -800,5 +801,6 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ]
+  ],
+  "last_scraped_cycle": "2026-09-29"
 }
