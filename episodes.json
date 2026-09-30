@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e25",
+      "title": "BBHin Day 24: Rate the Captain! Yea or Nay?",
+      "season": 20,
+      "episode": 25,
+      "date": "30 Sep 2026",
+      "duration": "1h 9m",
+      "description": "It’s a ‘1 v all’ situation for Qazi as his comment sets Kanika off and turns the Gharwaales against him! Gullu gets another shot at captaincy contendership, but there’s a catch.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/2348/1790778932348-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "en9puwlkunmznop",
+          "GDFlix-stream": "4B1QdboJWkR8CgU"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "ggpm1tgamecc491",
+          "GDFlix-stream": "N6kq5W955Vz2Yxx"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "iqoqdzqozizszoi",
+          "GDFlix-stream": "IsvpFvyIaXulz86"
+        }
+      },
+      "HubCloud-stream": "en9puwlkunmznop",
+      "GDFlix-stream": "4B1QdboJWkR8CgU"
+    },
+    {
       "id": "bb-s20-e24",
       "title": "BBHin Day 23: Mission Ration, Phir Captain?",
       "season": 20,
@@ -802,5 +834,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-09-29"
+  "last_scraped_cycle": "2026-09-30"
 }
