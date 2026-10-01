@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e26",
+      "title": "BBHin Day 25: Darr Ka Mahaul Ft. Dolly",
+      "season": 20,
+      "episode": 26,
+      "date": "1 Oct 2026",
+      "duration": "1h 8m",
+      "description": "A new debate stirs over the kitchen clash between Mahhi and Mary! The house turns jolly as BB introduces Dolly, and the boys must follow her orders to bag captaincy contendership!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/146/1790867140146-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "727rmskrrpr1ruk",
+          "GDFlix-stream": "qG5rvBRcxFemnHg"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "ixst2t6aaivlyqv",
+          "GDFlix-stream": "FPlRTmBJ376M72G"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "1oerowg9bi0jqq4",
+          "GDFlix-stream": "9j6Qqb7FkIvueZF"
+        }
+      },
+      "HubCloud-stream": "727rmskrrpr1ruk",
+      "GDFlix-stream": "qG5rvBRcxFemnHg"
+    },
+    {
       "id": "bb-s20-e25",
       "title": "BBHin Day 24: Rate the Captain! Yea or Nay?",
       "season": 20,
@@ -835,5 +867,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-09-30"
+  "last_scraped_cycle": "2026-10-01"
 }
