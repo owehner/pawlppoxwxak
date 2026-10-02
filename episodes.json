@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e27",
+      "title": "Bigg Boss Season 20 Episode 27",
+      "season": 20,
+      "episode": 27,
+      "date": "02 Oct 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 27.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "61e8sabewepjlwg",
+          "GDFlix-stream": "rRlCDVluhGaid5O"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "2unfbgzx4yingxq",
+          "GDFlix-stream": "8wMIOSxgjHcWAB9"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "yc400iy467stisg",
+          "GDFlix-stream": "FXH83Tx18c9lzvs"
+        }
+      },
+      "HubCloud-stream": "61e8sabewepjlwg",
+      "GDFlix-stream": "rRlCDVluhGaid5O"
+    },
+    {
       "id": "bb-s20-e26",
       "title": "BBHin Day 25: Darr Ka Mahaul Ft. Dolly",
       "season": 20,
@@ -867,6 +899,5 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ],
-  "last_scraped_cycle": "2026-10-01"
+  ]
 }
