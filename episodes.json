@@ -23,23 +23,23 @@
           "label": "1080p FHD",
           "size": "",
           "HubCloud-stream": "61e8sabewepjlwg",
-          "GDFlix-stream": "rRlCDVluhGaid5O"
+          "GDFlix-stream": "uQbqL3ZgnTfdOPE"
         },
         "720p": {
           "label": "720p HD",
           "size": "",
-          "HubCloud-stream": "2unfbgzx4yingxq",
-          "GDFlix-stream": "8wMIOSxgjHcWAB9"
+          "HubCloud-stream": "t1mpqstssq8ds1c",
+          "GDFlix-stream": "CyPWXOFKDDO2i8L"
         },
         "480p": {
           "label": "480p SD",
           "size": "",
           "HubCloud-stream": "yc400iy467stisg",
-          "GDFlix-stream": "FXH83Tx18c9lzvs"
+          "GDFlix-stream": "pCTPyoVU3gPDE8Z"
         }
       },
       "HubCloud-stream": "61e8sabewepjlwg",
-      "GDFlix-stream": "rRlCDVluhGaid5O",
+      "GDFlix-stream": "uQbqL3ZgnTfdOPE",
       "hotstar_id": "1271702326"
     },
     {
@@ -901,5 +901,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-10-02"
+  "last_scraped_cycle": "2026-10-03"
 }
