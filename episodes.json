@@ -11,13 +11,13 @@
   "episodes": [
     {
       "id": "bb-s20-e28",
-      "title": "Bigg Boss Season 20 Episode 28",
+      "title": "BBHin Day 27: Salman Demands Honest Answers",
       "season": 20,
       "episode": 28,
-      "date": "03 Oct 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 28.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "date": "3 Oct 2026",
+      "duration": "1h 11m",
+      "description": "Salman asks the Gharwalas to name those they admire and those they see flaws in. Qazi faces scrutiny over Kanika, while Aasif gets praised for stepping up.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/9379/1791036909379-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -39,7 +39,8 @@
         }
       },
       "HubCloud-stream": "wgkgkxgvpwwcwlw",
-      "GDFlix-stream": "efBPpSXxR7RkiXG"
+      "GDFlix-stream": "efBPpSXxR7RkiXG",
+      "hotstar_id": "1271702327"
     },
     {
       "id": "bb-s20-e27",
@@ -932,5 +933,6 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ]
+  ],
+  "last_scraped_cycle": "2026-10-03"
 }
