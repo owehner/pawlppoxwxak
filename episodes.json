@@ -10,6 +10,38 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e29",
+      "title": "Bigg Boss Season 20 Episode 29",
+      "season": 20,
+      "episode": 29,
+      "date": "04 Oct 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 29.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "ezebqdxqnsdeezy",
+          "GDFlix-stream": "StJtLIyQx4ZMiio"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "ozonfoj4qnk2xio",
+          "GDFlix-stream": "L6o2ik2D5Y6C1EY"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "vgvedywy0rwrzwz",
+          "GDFlix-stream": "71eihuUlWiRPnBz"
+        }
+      },
+      "HubCloud-stream": "ezebqdxqnsdeezy",
+      "GDFlix-stream": "StJtLIyQx4ZMiio"
+    },
+    {
       "id": "bb-s20-e28",
       "title": "BBHin Day 27: Salman Demands Honest Answers",
       "season": 20,
@@ -933,6 +965,5 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ],
-  "last_scraped_cycle": "2026-10-03"
+  ]
 }
