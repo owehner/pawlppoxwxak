@@ -10,14 +10,46 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e30",
+      "title": "BBHin Day 29: Pack a Nomination Punch!",
+      "season": 20,
+      "episode": 30,
+      "date": "5 Oct 2026",
+      "duration": "1h 7m",
+      "description": "The kitchen clash is on, where Mahhi and Uditi find themselves at loggerheads. Post WKV, the house dynamics change once again, and it all unravels in the nomination-special ring!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/8763/1791211538763-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "iuouns8ukoy01yi",
+          "GDFlix-stream": "MeQbyuje6162IyQ"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "yethhv2x45eey4y",
+          "GDFlix-stream": "MIKxe9hPcYYqMFb"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "axxcckxnkuwkex3",
+          "GDFlix-stream": "27mf9s3m8qmdHtM"
+        }
+      },
+      "HubCloud-stream": "iuouns8ukoy01yi",
+      "GDFlix-stream": "MeQbyuje6162IyQ"
+    },
+    {
       "id": "bb-s20-e29",
-      "title": "Bigg Boss Season 20 Episode 29",
+      "title": "BBHin Day 28: Surprise Ya Shock?",
       "season": 20,
       "episode": 29,
       "date": "04 Oct 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 29.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "duration": "1h 7m",
+      "description": "Ayushmann Khurrana, Sara Ali Khan, Mika Singh and more special guests join Salman on stage. Fun and games take over, but the danger of eviction looms large over the Gharwaales.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/9219/1791124349219-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -39,7 +71,8 @@
         }
       },
       "HubCloud-stream": "ezebqdxqnsdeezy",
-      "GDFlix-stream": "StJtLIyQx4ZMiio"
+      "GDFlix-stream": "StJtLIyQx4ZMiio",
+      "hotstar_id": "1271702328"
     },
     {
       "id": "bb-s20-e28",
@@ -965,5 +998,6 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ]
+  ],
+  "last_scraped_cycle": "2026-10-05"
 }
