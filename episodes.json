@@ -341,13 +341,13 @@
     },
     {
       "id": "bb-s20-e51",
-      "title": "Bigg Boss Season 20 Episode 51",
+      "title": "BBHin Day 50: Ek Bawaal, Many Sawaal!",
       "season": 20,
       "episode": 51,
       "date": "06 Nov 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 51.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "duration": "1h 10m",
+      "description": "The aftereffects of Kaashvi’s confrontation take over, with Lovepreet suffering a big breakdown! While she raises questions at Scout, a new clash stirs between Kanika and Uditi.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/4330/1793026574330-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -370,7 +370,7 @@
       },
       "HubCloud-stream": "ddsv7pdiostiwo6",
       "GDFlix-stream": "3CzOfj51Eomo81r",
-      "hotstar_id": ""
+      "hotstar_id": "1271702350"
     },
     {
       "id": "bb-s20-e50",
@@ -2022,5 +2022,6 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ]
+  ],
+  "last_scraped_cycle": "2026-11-05"
 }
