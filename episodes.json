@@ -10,6 +10,1029 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e61",
+      "title": "BBHin Day 60: Milega Pyaar Ya Vaar?",
+      "season": 20,
+      "episode": 61,
+      "date": "5 Nov 2026",
+      "duration": "1h 10m",
+      "description": "Another emotional moment follows as Arishfa must choose between gaining a life or claiming Amrapali’s message. Further, Scout seeks clarity on the message sent by his family.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/6508/1793892256508-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "hwnl88l1httzfen",
+          "GDFlix-stream": "JhEyUoaqxcLVWRJ"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "k11g8f1vtkfk8vi",
+          "GDFlix-stream": "tC0lqGeV4afRqpc"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "ki8jq8r92qpoi2x",
+          "GDFlix-stream": "z8bGhxwchWB2JxD"
+        }
+      },
+      "HubCloud-stream": "hwnl88l1httzfen",
+      "GDFlix-stream": "JhEyUoaqxcLVWRJ",
+      "hotstar_id": "1271702360"
+    },
+    {
+      "id": "bb-s20-e60",
+      "title": "BBHin Day 59: Bada Expose, Bade Sacrifice!",
+      "season": 20,
+      "episode": 60,
+      "date": "4 Nov 2026",
+      "duration": "1h 11m",
+      "description": "The message sent by Lovepreet’s mother exposes Mahhi’s remarks while making Amrapali reconsider her friendship. To claim Yung’s family message, a housemate must make a sacrifice!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/4301/1793804724301-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "moqosiwysgyto1n",
+          "GDFlix-stream": null
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "seopfe4bv444keg",
+          "GDFlix-stream": null
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "slgnzjoakwgx5lm",
+          "GDFlix-stream": null
+        }
+      },
+      "HubCloud-stream": "moqosiwysgyto1n",
+      "GDFlix-stream": null,
+      "hotstar_id": "1271702359"
+    },
+    {
+      "id": "bb-s20-e59",
+      "title": "BBHin Day 58: Ghar Se Aaya Pyaar-Samachar!",
+      "season": 20,
+      "episode": 59,
+      "date": "3 Nov 2026",
+      "duration": "1h 9m",
+      "description": "The post-nomination bitterness comes out in the form of heated clashes. But emotions take over as Gharwaales get a chance to receive messages from home, albeit with a catch!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/6313/1793717186313-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "p14pez4izdzpwxf",
+          "GDFlix-stream": null
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "t2xtbqff6xtbri6",
+          "GDFlix-stream": null
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "dinuoni1h9ztith",
+          "GDFlix-stream": null
+        }
+      },
+      "HubCloud-stream": "p14pez4izdzpwxf",
+      "GDFlix-stream": null,
+      "hotstar_id": "1271702358"
+    },
+    {
+      "id": "bb-s20-e58",
+      "title": "BBHin Day 57: Nominations Ka Khatra",
+      "season": 20,
+      "episode": 58,
+      "date": "2 Nov 2026",
+      "duration": "1h 9m",
+      "description": "Post Weekend Ka Vaar, Mahhi’s remarks trigger Kanika again, while group equations shift. Nominations bring a twist, and Arishfa and Scout clash once more.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/6362/1793627906362-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "kf2fk1862lzsky2",
+          "GDFlix-stream": "PGHcP0SzWOPQH7y"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "hi1yfc7vrrrozd2",
+          "GDFlix-stream": "XBbI2CarWqS6u39"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "sjirkndnjy4ywgi",
+          "GDFlix-stream": "8okXrjiLZbbK0uD"
+        }
+      },
+      "HubCloud-stream": "kf2fk1862lzsky2",
+      "GDFlix-stream": "PGHcP0SzWOPQH7y",
+      "hotstar_id": "1271702357"
+    },
+    {
+      "id": "bb-s20-e57",
+      "title": "BBHin Day 56: Who Has the Real Rizz?",
+      "season": 20,
+      "episode": 57,
+      "date": "1 Nov 2026",
+      "duration": "1h 9m",
+      "description": "Salman challenges Scout to step up as hidden opinions and fake bonds are exposed. Elvish brings a fun Rizz Master test before a shocking eviction.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/3658/1793541933658-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "movibjxh1oqzhxz",
+          "GDFlix-stream": "O4vo2uZeWGHYCLA"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "i20b0ff9hivkiii",
+          "GDFlix-stream": "Xi8GmjsR9jxUdwf"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "d88gxp5p8yffx5y",
+          "GDFlix-stream": "uYQ3o5mBqFEjH6K"
+        }
+      },
+      "HubCloud-stream": "movibjxh1oqzhxz",
+      "GDFlix-stream": "O4vo2uZeWGHYCLA",
+      "hotstar_id": "1271702356"
+    },
+    {
+      "id": "bb-s20-e56",
+      "title": "BBHin Day 55: Salman Exposes the Housemates",
+      "season": 20,
+      "episode": 56,
+      "date": "31 Oct 2026",
+      "duration": "1h 8m",
+      "description": "Salman questions Scout’s loyalty and calls out Amrapali, Gullu and Mahhi for their gameplay. Will the housemates own up to their actions and face the truth?",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/4229/1793456244229-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "evp8gcveire7e1l",
+          "GDFlix-stream": "wcR21wepsJY8epP"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "vnhfucau5wilcbl",
+          "GDFlix-stream": "nNLvuAmY0b9c26x"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "zsgmeakeiezsmtz",
+          "GDFlix-stream": "qN8anzTUuw9BSZk"
+        }
+      },
+      "HubCloud-stream": "evp8gcveire7e1l",
+      "GDFlix-stream": "wcR21wepsJY8epP",
+      "hotstar_id": "1271702355"
+    },
+    {
+      "id": "bb-s20-e55",
+      "title": "BBHin Day 54: Ask Salman Anything!",
+      "season": 20,
+      "episode": 55,
+      "date": "30 Oct 2026",
+      "duration": "1h 10m",
+      "description": "Mahhi comforts a disheartened Yung as he feels sidelined by his friends. Excitement flares as Gharwaales get a chance to ask Salman anonymous questions, to be addressed during WKV!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/7545/1793371917545-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "mt8l9h1casi983x",
+          "GDFlix-stream": "x7w7TwbyuidAvtO"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "j15mzbblmohoocn",
+          "GDFlix-stream": "1xbccX7eLQmjnrf"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "t89yethbdeyeebh",
+          "GDFlix-stream": "pE9qSR4PIjS1hwm"
+        }
+      },
+      "HubCloud-stream": "mt8l9h1casi983x",
+      "GDFlix-stream": "x7w7TwbyuidAvtO",
+      "hotstar_id": "1271702354"
+    },
+    {
+      "id": "bb-s20-e54",
+      "title": "BBHin Day 53: Captaincy Race - Andar Ya Bahar?",
+      "season": 20,
+      "episode": 54,
+      "date": "29 Oct 2026",
+      "duration": "1h 11m",
+      "description": "With all eyes on the captain’s throne, the Gharwaales put it all on the line to stay alive in the race! Yung feels betrayed by his friends, triggering a confrontation with Scout.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/8648/1793286168648-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "j1ma1l1jo1cpybt",
+          "GDFlix-stream": "gcGRIHagISIOF2l"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "wuts1wutqdv1t1c",
+          "GDFlix-stream": "8MJKu7ZrkzzvRyr"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "qnfbhfvqhfbhwt5",
+          "GDFlix-stream": "Z4EGUrFMDIepTrB"
+        }
+      },
+      "HubCloud-stream": "j1ma1l1jo1cpybt",
+      "GDFlix-stream": "gcGRIHagISIOF2l",
+      "hotstar_id": "1271702353"
+    },
+    {
+      "id": "bb-s20-e53",
+      "title": "BBHin Day 52: The Decider 2X Room",
+      "season": 20,
+      "episode": 53,
+      "date": "28 Oct 2026",
+      "duration": "1h 11m",
+      "description": "Amid the nomination task, Lovepreet breaks down over her ongoing fiasco with Scout! The doors to 2X room open, where Mahhi gets another shot at captaincy, but there’s a catch.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/2655/1793199282655-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "m5o9pf197vnv36v",
+          "GDFlix-stream": "lUuJdb5dJVlUUjH"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "vzyh6a1p14hjj1u",
+          "GDFlix-stream": "Iqiel6bIE4VWtUi"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "yfcoe0atx1tcxxw",
+          "GDFlix-stream": "axhiuCToWbYuUJi"
+        }
+      },
+      "HubCloud-stream": "m5o9pf197vnv36v",
+      "GDFlix-stream": "lUuJdb5dJVlUUjH",
+      "hotstar_id": "1271702352"
+    },
+    {
+      "id": "bb-s20-e52",
+      "title": "BBHin Day 51: Absolute Chaos",
+      "season": 20,
+      "episode": 52,
+      "date": "27 Oct 2026",
+      "duration": "1h 10m",
+      "description": "Arishfa calls out the Gharwaales for breaking a rule, and more fights continue to run in a loop! Gullu and Kanika devise a plot, while the nomination game begins in full swing.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/6924/1793113026924-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "hcvknl1h31vonr8",
+          "GDFlix-stream": "Ea7Zf7ydATRXOPK"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "a8rerd4kdf88pum",
+          "GDFlix-stream": "nFRn9uaPKBpoqqC"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "wrr7gnqrnwvznrg",
+          "GDFlix-stream": "Dvsz4pUiIIZ281n"
+        }
+      },
+      "HubCloud-stream": "hcvknl1h31vonr8",
+      "GDFlix-stream": "Ea7Zf7ydATRXOPK",
+      "hotstar_id": "1271702351"
+    },
+    {
+      "id": "bb-s20-e51",
+      "title": "Bigg Boss Season 20 Episode 51",
+      "season": 20,
+      "episode": 51,
+      "date": "06 Nov 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 51.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "ddsv7pdiostiwo6",
+          "GDFlix-stream": "3CzOfj51Eomo81r"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "dkit8gt8twewtoa",
+          "GDFlix-stream": "DZoYA3W5jhccASV"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "4jkccfaifhdng1t",
+          "GDFlix-stream": "V98uWZvi9x3yzR4"
+        }
+      },
+      "HubCloud-stream": "ddsv7pdiostiwo6",
+      "GDFlix-stream": "3CzOfj51Eomo81r",
+      "hotstar_id": ""
+    },
+    {
+      "id": "bb-s20-e50",
+      "title": "BBHin Day 49: Surprise Guests and Reality Checks",
+      "season": 20,
+      "episode": 50,
+      "date": "25 Oct 2026",
+      "duration": "1h 8m",
+      "description": "Sonakshi Sinha and Zaheer Iqbal play a fun quiz while Farrhana Bhatt motivates the Gharwaales. Kaashvi Hiranandani’s surprise entry turns up the heat for Love and Scout.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/9853/1792937599853-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "j8twwsnwtfbt8p8",
+          "GDFlix-stream": "4M9EMhvj8KECEVy"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "kqrmqqro01iq0iq",
+          "GDFlix-stream": "Ljd0SvkJXdTgTh2"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "ll27vzzqy7swlek",
+          "GDFlix-stream": "SYWdZOddfqBTRki"
+        }
+      },
+      "HubCloud-stream": "j8twwsnwtfbt8p8",
+      "GDFlix-stream": "4M9EMhvj8KECEVy",
+      "hotstar_id": "1271702349"
+    },
+    {
+      "id": "bb-s20-e49",
+      "title": "BBHin Day 48: Rohit Shetty Drops Truth Bombs",
+      "season": 20,
+      "episode": 49,
+      "date": "24 Oct 2026",
+      "duration": "1h 8m",
+      "description": "Rohit Shetty is here with a reality check for the Gharwaales, from Yung and Aasif to Love and Scout. Eviction brings a major twist with two lifelines at stake. Who survives?",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/1620/1792849491620-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "81mr2mknggmww67",
+          "GDFlix-stream": "GZU9uZBrZDCx3AD"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "ezksb4vphodzssa",
+          "GDFlix-stream": "3sgAKBS7Rbd27ZV"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "h1wejm0rjvbbsev",
+          "GDFlix-stream": "mHvjSLT1L4OdddW"
+        }
+      },
+      "HubCloud-stream": "81mr2mknggmww67",
+      "GDFlix-stream": "GZU9uZBrZDCx3AD",
+      "hotstar_id": "1271702348"
+    },
+    {
+      "id": "bb-s20-e48",
+      "title": "BBHin Day 47: Ek Vishesh Adhikaar, Kai Dawedaar",
+      "season": 20,
+      "episode": 48,
+      "date": "23 Oct 2026",
+      "duration": "1h 9m",
+      "description": "A surprise Vishesh Adhikaar win shakes things up in the Captaincy task. Yung opens up about his past, and Love and Amrapali clash over cooking duties! Who becomes the new captain?",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/5336/1792765625336-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "c6sns1jsx23sksp",
+          "GDFlix-stream": "PbicsXZDajNhPZ9"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "vh8vu8mijskig78",
+          "GDFlix-stream": "JAwLR59G3ex8RRO"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "9h1qcruxvxhotox",
+          "GDFlix-stream": "6QYhnoJAI1EbwNc"
+        }
+      },
+      "HubCloud-stream": "c6sns1jsx23sksp",
+      "GDFlix-stream": "PbicsXZDajNhPZ9",
+      "hotstar_id": "1271702347"
+    },
+    {
+      "id": "bb-s20-e47",
+      "title": "BBHin Day 46: Dosti Mein Daraar?",
+      "season": 20,
+      "episode": 47,
+      "date": "22 Oct 2026",
+      "duration": "1h 11m",
+      "description": "While captaincy Daawedaars are named, friendships show cracks. Tensions rise between Qazi and Scout, and Arishfa and Love. Scout and Kanika wonder who is really close to whom.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/727/1792678690727-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "x6webuh5zmzt1g7",
+          "GDFlix-stream": "QUsgUM6b17hPGR1"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "ig0bokkvsqlygqs",
+          "GDFlix-stream": "7eFDT5xzX0BNSe0"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "o1pcoabbscrox1a",
+          "GDFlix-stream": "jxb1KNkEVn9RlRt"
+        }
+      },
+      "HubCloud-stream": "x6webuh5zmzt1g7",
+      "GDFlix-stream": "QUsgUM6b17hPGR1",
+      "hotstar_id": "1271702346"
+    },
+    {
+      "id": "bb-s20-e46",
+      "title": "BBHin Day 45: Broke a Rule? Get Burnt by BB",
+      "season": 20,
+      "episode": 46,
+      "date": "21 Oct 2026",
+      "duration": "1h 9m",
+      "description": "Captain Scout gets a special power that’ll hold crucial for the new captaincy contendership! Further, a rule break brings serious repercussions for the entire house.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/2253/1792594712253-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "ovoi1k6kmd5e7bo",
+          "GDFlix-stream": "UvdzxQmS8QNbkvj"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "ot999n4t4amooj7",
+          "GDFlix-stream": "Rs17LetpKFAtmCE"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "5qdt148c518vjm5",
+          "GDFlix-stream": "v8gwnWb993dwT3I"
+        }
+      },
+      "HubCloud-stream": "ovoi1k6kmd5e7bo",
+      "GDFlix-stream": "UvdzxQmS8QNbkvj",
+      "hotstar_id": "1271702345"
+    },
+    {
+      "id": "bb-s20-e45",
+      "title": "BBHin Day 44: Nominations - Kitne Doshi?",
+      "season": 20,
+      "episode": 45,
+      "date": "20 Oct 2026",
+      "duration": "1h 7m",
+      "description": "It’s nomination time, and a war of words ensues as the Gharwaales must nominate based on the 'Dosh'! While captain Scout gets a special power, Aasif and Qazi lock horns mid-task.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/9825/1792505859825-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "l0c1vuw100ih0ae",
+          "GDFlix-stream": "ra1o1t5Xtb70LXT"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "v1sm7ft5c1d5foo",
+          "GDFlix-stream": "nwcvUrOcDSqQ3ht"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "llssjktqnhfkol5",
+          "GDFlix-stream": "TYUYaJ7K5fM4jFj"
+        }
+      },
+      "HubCloud-stream": "l0c1vuw100ih0ae",
+      "GDFlix-stream": "ra1o1t5Xtb70LXT",
+      "hotstar_id": "1271702344"
+    },
+    {
+      "id": "bb-s20-e44",
+      "title": "BBHin Day 43: A Bitter Revenge!",
+      "season": 20,
+      "episode": 44,
+      "date": "19 Oct 2026",
+      "duration": "1h 8m",
+      "description": "The post-WKV vibe is all about clashes, as rifts continue among Scout, Yung, and Qazi. But Arishfa unleashes the big storm as she goes on a vengeance mode against the Gharwaales.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/5436/1792421045436-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "tz19q1qrf7wa21z",
+          "GDFlix-stream": "OERisidhTwVrYmE"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "5a1sh16bz6bjwyi",
+          "GDFlix-stream": "TIy2nxW7TMCpvab"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "rezmrshimidzrhd",
+          "GDFlix-stream": "vNDD9iEYNTWJq5V"
+        }
+      },
+      "HubCloud-stream": "tz19q1qrf7wa21z",
+      "GDFlix-stream": "OERisidhTwVrYmE",
+      "hotstar_id": "1271702343"
+    },
+    {
+      "id": "bb-s20-e43",
+      "title": "BBHin Day 42: Knock, Knock? It’s Time to Exit",
+      "season": 20,
+      "episode": 43,
+      "date": "18 Oct 2026",
+      "duration": "1h 9m",
+      "description": "Salman brings a series of confrontation tasks that let Gharwaales speak up against each other! While this unfurls bitter clashes, tension peaks as the exit door is about to open.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/6131/1792335266131-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "dudakaaoirihxau",
+          "GDFlix-stream": "KMa8ntBStMBQj9I"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "dc8omprz1qxxkkv",
+          "GDFlix-stream": "QPZWV9dt8IttJ4H"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "rlmww1qltuhlqha",
+          "GDFlix-stream": "ePLdrcN6TlyQgxk"
+        }
+      },
+      "HubCloud-stream": "dudakaaoirihxau",
+      "GDFlix-stream": "KMa8ntBStMBQj9I",
+      "hotstar_id": "1271702342"
+    },
+    {
+      "id": "bb-s20-e42",
+      "title": "BBHin Day 41: Pehle Expose, Phir Explode",
+      "season": 20,
+      "episode": 42,
+      "date": "17 Oct 2026",
+      "duration": "1h 9m",
+      "description": "Salman holds nothing back, calling out some Gharwaales’ inaction and vile tactics! While the reality check is served, Kanika and Yung get praised for standing by the right.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/7598/1792248707598-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "vmcjl8jvnhqnlgm",
+          "GDFlix-stream": "3PrtKdi9D2qTikC"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "l88hqa1oiixji1t",
+          "GDFlix-stream": "YsT0QLe8erlwbrC"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "rtrb33ri1fnymfr",
+          "GDFlix-stream": "J3lEoD4NrgNBqI7"
+        }
+      },
+      "HubCloud-stream": "vmcjl8jvnhqnlgm",
+      "GDFlix-stream": "3PrtKdi9D2qTikC",
+      "hotstar_id": "1271702341"
+    },
+    {
+      "id": "bb-s20-e41",
+      "title": "BBHin Day 40: BB Says, Take a Life!",
+      "season": 20,
+      "episode": 41,
+      "date": "16 Oct 2026",
+      "duration": "1h 9m",
+      "description": "A rebellion brews in the house as Arishfa feels targeted. BB adds a new twist—with time and ration running out, the housemates must decide whose life to sacrifice.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/8122/1792158478122-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "tmbcownpckcttjl",
+          "GDFlix-stream": "YWZgOMh3V0dI3wT"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "66yufmvycyujdff",
+          "GDFlix-stream": "XfoESNBBjwErM9D"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "u11vgun0y9jzg9n",
+          "GDFlix-stream": "9JtgeXLWlSKpL6K"
+        }
+      },
+      "HubCloud-stream": "tmbcownpckcttjl",
+      "GDFlix-stream": "YWZgOMh3V0dI3wT",
+      "hotstar_id": "1271702340"
+    },
+    {
+      "id": "bb-s20-e40",
+      "title": "BBHin Day 39: Select. Eliminate. Elect!",
+      "season": 20,
+      "episode": 40,
+      "date": "15 Oct 2026",
+      "duration": "1h 8m",
+      "description": "The captaincy race gets intense as the ultimate power lies in the hands of ex-captains, who’ll elect the next house captain! Emotions run high as Arishfa shares a moment with Qazi.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/8380/1792075768380-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "itfupprcfnnaxxb",
+          "GDFlix-stream": "ivs3hVFImzPyczj"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "1u7ooxaaa217haj",
+          "GDFlix-stream": "pshWupF1aqCvHMr"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "46ljw5w66h56zhu",
+          "GDFlix-stream": "FcNL0WiU8t0cAIj"
+        }
+      },
+      "HubCloud-stream": "itfupprcfnnaxxb",
+      "GDFlix-stream": "ivs3hVFImzPyczj",
+      "hotstar_id": "1271702339"
+    },
+    {
+      "id": "bb-s20-e39",
+      "title": "BBHin Day 38: Action Ka Reaction, BB-style!",
+      "season": 20,
+      "episode": 39,
+      "date": "14 Oct 2026",
+      "duration": "1h 10m",
+      "description": "After the explosive clash, Gharwaales question Nakul’s actions. While BB delivers a strong judgement, Lovepreet's unexpected move triggers the housemates.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/7550/1791987577550-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "ub1gnebno1vvrni",
+          "GDFlix-stream": "dr3F6XW4GjqPXxj"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "ilsjbiilbbainxx",
+          "GDFlix-stream": "kcEHtbUerKLrgbx"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "jaj1alvjtyvtutt",
+          "GDFlix-stream": "IJgE26yxn0pSZFd"
+        }
+      },
+      "HubCloud-stream": "ub1gnebno1vvrni",
+      "GDFlix-stream": "dr3F6XW4GjqPXxj",
+      "hotstar_id": "1271702338"
+    },
+    {
+      "id": "bb-s20-e38",
+      "title": "BBHin Day 37: Gazab Mudde, Gazab Bezzati",
+      "season": 20,
+      "episode": 38,
+      "date": "13 Oct 2026",
+      "duration": "1h 7m",
+      "description": "Nominations Ki Baithak in BB Gazab Bezzati Zone turns heated as Mary, Uditi and Arishfa clash. A minor spat between Nakul and Gullu explodes, sending the Gharwaales into chaos.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/6394/1791899256394-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "lgd1lgqngd0ndgl",
+          "GDFlix-stream": "lnle6Y1K1Ouid1N"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "prrrrvcqfekcrgk",
+          "GDFlix-stream": "NKUMuQi8UP2RwY1"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "j1iedxekesbbpbd",
+          "GDFlix-stream": "hw8WuC0Qq2XG0eF"
+        }
+      },
+      "HubCloud-stream": "lgd1lgqngd0ndgl",
+      "GDFlix-stream": "lnle6Y1K1Ouid1N",
+      "hotstar_id": "1271702337"
+    },
+    {
+      "id": "bb-s20-e37",
+      "title": "BBHin Day 36: Kalesh Trending Hai!",
+      "season": 20,
+      "episode": 37,
+      "date": "12 Oct 2026",
+      "duration": "1h 6m",
+      "description": "The new wildcards become the buzz of the house as the Gharwaales decode their personalities. Qazi and Gullu plot a prank, while Arishfa and Kanika go berserk in a heated face-off!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/562/1791816340562-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "dcjtdjn4gcgdhg4",
+          "GDFlix-stream": "v7vVXRRU6I2Rn2h"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "a9q219mpx8epaet",
+          "GDFlix-stream": "Lb4AqHOqeELR9hR"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "62444lzw4ry2oz4",
+          "GDFlix-stream": "0irC0K00vAju8Wp"
+        }
+      },
+      "HubCloud-stream": "dcjtdjn4gcgdhg4",
+      "GDFlix-stream": "v7vVXRRU6I2Rn2h",
+      "hotstar_id": "1271702336"
+    },
+    {
+      "id": "bb-s20-e36",
+      "title": "BBHin Day 35: Salman Turns Up the Heat",
+      "season": 20,
+      "episode": 36,
+      "date": "11 Oct 2026",
+      "duration": "1h 7m",
+      "description": "Salman confronts Scout, Yung and Aman over their actions and calls out the Gharwalas for lacking empathy towards Qazi. With eviction looming, a surprise entry awaits.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/7573/1791726087573-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "rof81u8ir01reih",
+          "GDFlix-stream": "tTyF0h9STutRZTW"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "hrooqhol91lrqoq",
+          "GDFlix-stream": "eZvvN5C54kqNsWJ"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "acoecrwav1ojrok",
+          "GDFlix-stream": "GFMVWcBPFfjEcHQ"
+        }
+      },
+      "HubCloud-stream": "rof81u8ir01reih",
+      "GDFlix-stream": "tTyF0h9STutRZTW",
+      "hotstar_id": "1271702335"
+    },
+    {
+      "id": "bb-s20-e35",
+      "title": "BBHin Day 34: Whose Game Needs a Rebirth?",
+      "season": 20,
+      "episode": 35,
+      "date": "10 Oct 2026",
+      "duration": "1h 11m",
+      "description": "Salman puts the Gharwalas in the spotlight as Gullu names three who are yet to reveal themselves. With Roadies Rebirth fun and a wildcard twist, who will shake up the game?",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/543/1791642350543-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "pplqgiqjbjbjj52",
+          "GDFlix-stream": "JZBT6eWEWTUW0qW"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "10rw16lhrt1tlw0",
+          "GDFlix-stream": "81rFydVhTXc55Pn"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "xiagnro18una1io",
+          "GDFlix-stream": "42xrlRGU5zTolk5"
+        }
+      },
+      "HubCloud-stream": "pplqgiqjbjbjj52",
+      "GDFlix-stream": "JZBT6eWEWTUW0qW",
+      "hotstar_id": "1271702334"
+    },
+    {
+      "id": "bb-s20-e34",
+      "title": "BBHin Day 33: Love Says, Checkmate!",
+      "season": 20,
+      "episode": 34,
+      "date": "9 Oct 2026",
+      "duration": "1h 9m",
+      "description": "New clashes continue to upend the house! But the real politics unfold when Love leverages her ‘Vishesh Adhikaar’, which becomes the deciding factor in the captaincy battle.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/3787/1791555533787-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "y5iyq9yq4cfx711",
+          "GDFlix-stream": "teJT4YPE8f5jhT9"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "0etq1mqkxeenw6p",
+          "GDFlix-stream": "naIlCcRHPYe2fq7"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "rz72pszcgmcsr7h",
+          "GDFlix-stream": "Z7nhp7fBkFtYuHq"
+        }
+      },
+      "HubCloud-stream": "y5iyq9yq4cfx711",
+      "GDFlix-stream": "teJT4YPE8f5jhT9",
+      "hotstar_id": "1271702333"
+    },
+    {
+      "id": "bb-s20-e33",
+      "title": "BBHin Day 32: The Ration Heist!",
+      "season": 20,
+      "episode": 33,
+      "date": "8 Oct 2026",
+      "duration": "1h 8m",
+      "description": "Scout’s comment on Love and Yung’s equation doesn’t sit well, and a clash ensues! The real drama unfolds in BB’s ration godown as Love’s unexpected move triggers everyone.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/2418/1791470972418-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "moewi3glmimoicx",
+          "GDFlix-stream": "cNbEdnA74vpFVTp"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "q7nfkzztu2jjw0f",
+          "GDFlix-stream": "iC9412fnuP5dlVv"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "c2q5hohclqcip6s",
+          "GDFlix-stream": "XCiESUkn0dtQC1e"
+        }
+      },
+      "HubCloud-stream": "moewi3glmimoicx",
+      "GDFlix-stream": "cNbEdnA74vpFVTp",
+      "hotstar_id": "1271702332"
+    },
+    {
+      "id": "bb-s20-e32",
+      "title": "BBHin Day 31: It’s Debate Time",
+      "season": 20,
+      "episode": 32,
+      "date": "7 Oct 2026",
+      "duration": "1h 10m",
+      "description": "Aasif steps into the shoes of a news anchor, bringing the latest scoop of the house! Eyeing captaincy contendership, the Gharwaales aim to win the debate. Who’ll make a mark?",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/4802/1791383594802-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "kmmcdqq9dc1kmzk",
+          "GDFlix-stream": "Y3TOSXwNdptXjSC"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "15negezjuehzh5f",
+          "GDFlix-stream": "3vPsUeI4jllHxiW"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "gcd1gwfkx1xfabf",
+          "GDFlix-stream": null
+        }
+      },
+      "HubCloud-stream": "kmmcdqq9dc1kmzk",
+      "GDFlix-stream": "Y3TOSXwNdptXjSC",
+      "hotstar_id": "1271702331"
+    },
+    {
+      "id": "bb-s20-e31",
+      "title": "BBHin Day 30: No More Pyaar, Only Takraar!",
+      "season": 20,
+      "episode": 31,
+      "date": "6 Oct 2026",
+      "duration": "1h 10m",
+      "description": "The nomination ring comes to a close, but captain Uditi’s ‘Vishesh Adhikaar’ adds a new twist. Further, the aftereffects of nominations kick in, where old bonds begin to crack!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/5227/1791296115227-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "fuu4u0brituprep",
+          "GDFlix-stream": "DLJIMPqQGd5NKFf"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "k7srnsy1se1r7yk",
+          "GDFlix-stream": "8XluZZIuUDvxIJJ"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "fhemuhjs0u3cvuu",
+          "GDFlix-stream": "2DVVaQ44xucWSGv"
+        }
+      },
+      "HubCloud-stream": "fuu4u0brituprep",
+      "GDFlix-stream": "DLJIMPqQGd5NKFf",
+      "hotstar_id": "1271702330"
+    },
+    {
       "id": "bb-s20-e30",
       "title": "BBHin Day 29: Pack a Nomination Punch!",
       "season": 20,
@@ -999,6 +2022,5 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ],
-  "last_scraped_cycle": "2026-10-05"
+  ]
 }

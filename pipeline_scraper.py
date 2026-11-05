@@ -20,7 +20,51 @@ import urllib.error
 from datetime import datetime
 
 # Default URLs & Config
-MAIN_URL = "https://new4.moviesdrive.christmas/bigg-boss-season-20-2026/"
+MAIN_URL = "https://new1.moviesdrive.cyou/bigg-boss-season-20-2026/"
+MOVIESDRIVE_CANDIDATE_DOMAINS = [
+    "https://new1.moviesdrive.cyou",
+    "https://new1.moviesdrive.beer",
+    "https://new4.moviesdrive.christmas",
+    "https://moviesdrive.com",
+]
+
+def resolve_moviesdrive_page():
+    """
+    Finds the active working MoviesDrive Bigg Boss 20 URL dynamically.
+    Checks candidate domains and search.php API if the primary URL fails.
+    Returns: (url, html)
+    """
+    primary = MAIN_URL
+    try:
+        html = fetch_url(primary, timeout=10)
+        if "mdrive.lol/archive" in html or "archive" in html:
+            return primary, html
+    except Exception:
+        pass
+
+    # Try resolving via candidate domains using /search.php API
+    import subprocess
+    for base in MOVIESDRIVE_CANDIDATE_DOMAINS:
+        try:
+            search_api = f"{base}/search.php?q=bigg+boss+season+20&page=1"
+            cmd = ["curl", "-s", "-L", "--max-time", "6", search_api]
+            p = subprocess.run(cmd, capture_output=True, text=True, timeout=8)
+            if p.returncode == 0 and p.stdout:
+                data = json.loads(p.stdout)
+                for hit in data.get("hits", []):
+                    doc = hit.get("document", {})
+                    post_title = doc.get("post_title", "").lower()
+                    permalink = doc.get("permalink", "")
+                    if "season 20" in post_title or "season-20" in permalink:
+                        resolved_url = f"{base}{permalink}" if permalink.startswith("/") else permalink
+                        page_html = fetch_url(resolved_url, timeout=10)
+                        if "archive" in page_html:
+                            print(f"[*] Dynamically resolved MoviesDrive URL -> {resolved_url}")
+                            return resolved_url, page_html
+        except Exception:
+            continue
+
+    return primary, fetch_url(primary)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 if os.path.exists(os.path.join(BASE_DIR, "public", "episodes.json")):
     EPISODES_FILE = os.path.join(BASE_DIR, "public", "episodes.json")
@@ -392,7 +436,8 @@ def run_pipeline(dry_run=False, check_sizes=True, force=False):
     scraped_data = {}  # { ep_num: { "1080p": {...}, "720p": {...}, "480p": {...} } }
     
     try:
-        main_html = fetch_url(MAIN_URL)
+        active_url, main_html = resolve_moviesdrive_page()
+        print(f"    Source URL: {active_url}")
         archives = extract_quality_archives(main_html)
         print(f"[*] Found {len(archives)} quality archive URLs on MoviesDrive:")
         for q in ["1080p", "720p", "480p"]:
@@ -573,7 +618,8 @@ def run_pipeline(dry_run=False, check_sizes=True, force=False):
                     }
                 },
                 "HubCloud-stream": q1080.get("hubcloud") or q720.get("hubcloud") or q480.get("hubcloud"),
-                "GDFlix-stream": q1080.get("gdflix") or q720.get("gdflix") or q480.get("gdflix")
+                "GDFlix-stream": q1080.get("gdflix") or q720.get("gdflix") or q480.get("gdflix"),
+                "hotstar_id": hs_info.get("hotstar_id", "")
             }
             updated_eps.append(new_ep)
             
