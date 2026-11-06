@@ -11,13 +11,13 @@
   "episodes": [
     {
       "id": "bb-s20-e62",
-      "title": "Bigg Boss Season 20 Episode 62",
+      "title": "BBHin Day 61: The Diwali Bash Begins!",
       "season": 20,
       "episode": 62,
-      "date": "06 Nov 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 62.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "date": "6 Nov 2026",
+      "duration": "1h 8m",
+      "description": "Arishfa lands a special offer in the 2X room, but she must get the Gharwaales’ support. Amid serious clashes, the ‘Mahaul’ turns cosy as Diwali celebrations begin in full-swing!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/8862/1793976678862-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -40,7 +40,7 @@
       },
       "HubCloud-stream": "usaxhea1uhchxie",
       "GDFlix-stream": "efjUs8Gon9reV77",
-      "hotstar_id": ""
+      "hotstar_id": "1271702361"
     },
     {
       "id": "bb-s20-e61",
@@ -2055,5 +2055,6 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ]
+  ],
+  "last_scraped_cycle": "2026-11-06"
 }
