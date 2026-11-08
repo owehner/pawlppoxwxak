@@ -11,13 +11,13 @@
   "episodes": [
     {
       "id": "bb-s20-e63",
-      "title": "Bigg Boss Season 20 Episode 63",
+      "title": "BBHin Day 62: It’s a Star-studded Party",
       "season": 20,
       "episode": 63,
       "date": "07 Nov 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 63.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "duration": "1h 9m",
+      "description": "The festive mood elevates as Salman kicks off the celebrations for Bigg Boss’ new milestone. From Karan Johar to Shanaya Kapoor, beloved stars join in for a ‘Dhamakedar’ evening!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/6477/1794061556477-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -40,7 +40,7 @@
       },
       "HubCloud-stream": "1tnzt5twttnwkvr",
       "GDFlix-stream": "2ZlKDEBgG34BvZc",
-      "hotstar_id": ""
+      "hotstar_id": "1271702362"
     },
     {
       "id": "bb-s20-e62",
@@ -2088,5 +2088,6 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ]
+  ],
+  "last_scraped_cycle": "2026-11-08"
 }
