@@ -10,6 +10,39 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e66",
+      "title": "BBHin Day 65: Nominations Bring Unexpected Twists",
+      "season": 20,
+      "episode": 66,
+      "date": "10 Nov 2026",
+      "duration": "1h 11m",
+      "description": "Arishfa and Lovepreet's clash escalates as Scout questions Yung's silence. Will Qazi's prank and heated nomination arguments deepen the rifts in the house?",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/6657/1794322326657-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "eq28qmecxjxteev",
+          "GDFlix-stream": "UoR1d4FuUJKlOkh"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "tssd15fnr7rrppg",
+          "GDFlix-stream": "y6KTN2ez8TF2M3m"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "1vlymwbrbgf9elf",
+          "GDFlix-stream": "Awf8YxNkF1sfAQ6"
+        }
+      },
+      "HubCloud-stream": "eq28qmecxjxteev",
+      "GDFlix-stream": "UoR1d4FuUJKlOkh",
+      "hotstar_id": "1271702365"
+    },
+    {
       "id": "bb-s20-e65",
       "title": "BBHin Day 64: Make Noise for Jasmine Sandlas!",
       "season": 20,
@@ -2155,5 +2188,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-11-09"
+  "last_scraped_cycle": "2026-11-10"
 }
