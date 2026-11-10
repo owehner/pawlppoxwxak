@@ -10,12 +10,45 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e65",
+      "title": "BBHin Day 64: Make Noise for Jasmine Sandlas!",
+      "season": 20,
+      "episode": 65,
+      "date": "9 Nov 2026",
+      "duration": "1h 12m",
+      "description": "Qazi gets a makeover, but his prank turns ugly as he clashes with Manish! Wrapping the Diwali week with a bang, Jasmine Sandlas takes the stage with her powerhouse performance.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/9375/1794232829375-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "svsmwwemrm41tht",
+          "GDFlix-stream": "2mwNtQ9JpTemPsY"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "ezayh6xlmxrxjhh",
+          "GDFlix-stream": "HCk5frW4XpwCLiN"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "f4bpz1leb54ikoo",
+          "GDFlix-stream": "qatBUTbjQSxeotp"
+        }
+      },
+      "HubCloud-stream": "svsmwwemrm41tht",
+      "GDFlix-stream": "2mwNtQ9JpTemPsY",
+      "hotstar_id": "1271702364"
+    },
+    {
       "id": "bb-s20-e64",
       "title": "BBHin Day 63: Diwali Mehfil Ft. Mohit Chauhan",
       "season": 20,
       "episode": 64,
       "date": "8 Nov 2026",
-      "duration": "1h 30m",
+      "duration": "1h 7m",
       "description": "Qazi is back in his rockstar mood, kickstarting the Diwali party. The Mehfil begins as Mohit Chauhan and Harrdy Sandhu join in, but post-celebrations, the time for eviction nears!",
       "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/6082/1794145336082-h",
       "qualities": {
