@@ -10,6 +10,39 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e67",
+      "title": "Bigg Boss Season 20 Episode 67",
+      "season": 20,
+      "episode": 67,
+      "date": "11 Nov 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 67.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "gqf9im1vsumvyt5",
+          "GDFlix-stream": "R78k6mtIuADRQLH"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "bcwy9ggrm6aiiof",
+          "GDFlix-stream": "BLfdgcPcNy4uztG"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "hznnt61h4ta0ehb",
+          "GDFlix-stream": "YLoN8QPnRYYcAeC"
+        }
+      },
+      "HubCloud-stream": "gqf9im1vsumvyt5",
+      "GDFlix-stream": "R78k6mtIuADRQLH",
+      "hotstar_id": ""
+    },
+    {
       "id": "bb-s20-e66",
       "title": "BBHin Day 65: Nominations Bring Unexpected Twists",
       "season": 20,
@@ -2187,6 +2220,5 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ],
-  "last_scraped_cycle": "2026-11-10"
+  ]
 }
