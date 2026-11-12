@@ -10,6 +10,39 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e68",
+      "title": "BBHin Day 67: Yung and Scout's Explosive Fight",
+      "season": 20,
+      "episode": 68,
+      "date": "12 Nov 2026",
+      "duration": "1h 13m",
+      "description": "Scout’s reaction sparks a fierce clash with Yung that costs him dearly. Aamrapali questions Scout's selective stands, and a fun chat with Love turns ugly over his remarks.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/8653/1794493128653-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "th1vwvvhjdhtvkv",
+          "GDFlix-stream": "snxGpfMaioTH72P"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "kjnn23vo2tjg7rg",
+          "GDFlix-stream": "DcjmqjMRmn4VuRZ"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "1txt1xw3w19ofws",
+          "GDFlix-stream": "FFaOCYJ8fbHcgRc"
+        }
+      },
+      "HubCloud-stream": "th1vwvvhjdhtvkv",
+      "GDFlix-stream": "snxGpfMaioTH72P",
+      "hotstar_id": "1271702367"
+    },
+    {
       "id": "bb-s20-e67",
       "title": "BBHin Day 66: Fights, Fallout and a Rule Violation",
       "season": 20,
