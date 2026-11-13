@@ -10,6 +10,39 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e69",
+      "title": "Bigg Boss Season 20 Episode 69",
+      "season": 20,
+      "episode": 69,
+      "date": "13 Nov 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 69.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "idedmzwhniivm0u",
+          "GDFlix-stream": "wFo0hqCkGLDGw8P"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "8e5exh5w1fwpin5",
+          "GDFlix-stream": "EYkPQHj4yqVYpFn"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "ey1yssoel2woj6b",
+          "GDFlix-stream": "qROPZzY8lMqrgYx"
+        }
+      },
+      "HubCloud-stream": "idedmzwhniivm0u",
+      "GDFlix-stream": "wFo0hqCkGLDGw8P",
+      "hotstar_id": ""
+    },
+    {
       "id": "bb-s20-e68",
       "title": "BBHin Day 67: Yung and Scout's Explosive Fight",
       "season": 20,
@@ -2253,6 +2286,5 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ],
-  "last_scraped_cycle": "2026-11-12"
+  ]
 }
