@@ -10,6 +10,39 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e70",
+      "title": "Bigg Boss Season 20 Episode 70",
+      "season": 20,
+      "episode": 70,
+      "date": "14 Nov 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 70.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "zsbq0lksopqrb3f",
+          "GDFlix-stream": "qemsM44tDo2KUz6"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "yh6d7bvikdwq8gg",
+          "GDFlix-stream": "P4G19W55tTjPnPC"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "s84amshrxzmm6mz",
+          "GDFlix-stream": "YQzVz7r8hVwpegH"
+        }
+      },
+      "HubCloud-stream": "zsbq0lksopqrb3f",
+      "GDFlix-stream": "qemsM44tDo2KUz6",
+      "hotstar_id": ""
+    },
+    {
       "id": "bb-s20-e69",
       "title": "BBHin Day 68: A Shocker for All!",
       "season": 20,
@@ -2286,6 +2319,5 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ],
-  "last_scraped_cycle": "2026-11-13"
+  ]
 }
