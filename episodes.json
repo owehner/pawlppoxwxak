@@ -10,6 +10,39 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e71",
+      "title": "BBHin Day 70: Salman Strikes, Hypocrisy Exposed",
+      "season": 20,
+      "episode": 71,
+      "date": "15 Nov 2026",
+      "duration": "1h 11m",
+      "description": "Salman grills Kanika, Qazi, Scout, Love, and Mahhi over their actions. Gharwaales pick who’s right and wrong, and who needs grounding, as fear of eviction looms over the house.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/1637/1794753931637-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "gmq5hea5cirzcuv",
+          "GDFlix-stream": "8RdNdpr9x9pFhrq"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "mt2aabyb3y2nmx2",
+          "GDFlix-stream": "SARR3GL1MMabDyH"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "fkp4cmgxfra4sgd",
+          "GDFlix-stream": "wtZPOIRLX3i9Vdy"
+        }
+      },
+      "HubCloud-stream": "gmq5hea5cirzcuv",
+      "GDFlix-stream": "8RdNdpr9x9pFhrq",
+      "hotstar_id": "1271702370"
+    },
+    {
       "id": "bb-s20-e70",
       "title": "BBHin Day 69: Salman Ke Teekhe Sawaal",
       "season": 20,
@@ -2320,5 +2353,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-11-15"
+  "last_scraped_cycle": "2026-11-16"
 }
