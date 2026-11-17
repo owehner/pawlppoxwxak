@@ -11,13 +11,13 @@
   "episodes": [
     {
       "id": "bb-s20-e72",
-      "title": "Bigg Boss Season 20 Episode 72",
+      "title": "BBHin Day 71: Splash and Clash! Ft. Nominations",
       "season": 20,
       "episode": 72,
       "date": "16 Nov 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 72.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "duration": "1h 7m",
+      "description": "The post-WKV effect is evident as group dynamics shift and new alliances form! Multiple rulebreaks prompt BB to step in, while a high voltage nomination takes the house by storm.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/9090/1794839519090-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -40,7 +40,7 @@
       },
       "HubCloud-stream": "l5a1kvciak99lm1",
       "GDFlix-stream": "YEqIrEk0bosPNPl",
-      "hotstar_id": ""
+      "hotstar_id": "1271702371"
     },
     {
       "id": "bb-s20-e71",
@@ -2385,5 +2385,6 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ]
+  ],
+  "last_scraped_cycle": "2026-11-17"
 }
