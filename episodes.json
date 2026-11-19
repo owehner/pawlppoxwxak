@@ -10,6 +10,39 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e75",
+      "title": "Bigg Boss Season 20 Episode 75",
+      "season": 20,
+      "episode": 75,
+      "date": "19 Nov 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 75.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "b2rnn21mms1i9kg",
+          "GDFlix-stream": "48Mly5vUqb4Y1Gu"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "19znu7711z1eecu",
+          "GDFlix-stream": "GT0t2fZ1okoNvLe"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "dhomldcdphkmda3",
+          "GDFlix-stream": "wToksYVZWuWohX0"
+        }
+      },
+      "HubCloud-stream": "b2rnn21mms1i9kg",
+      "GDFlix-stream": "48Mly5vUqb4Y1Gu",
+      "hotstar_id": ""
+    },
+    {
       "id": "bb-s20-e74",
       "title": "BBHin Day 73: Game On for Captaincy Daawedari!",
       "season": 20,
@@ -2451,6 +2484,5 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ],
-  "last_scraped_cycle": "2026-11-18"
+  ]
 }
