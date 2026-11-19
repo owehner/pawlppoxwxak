@@ -11,13 +11,13 @@
   "episodes": [
     {
       "id": "bb-s20-e75",
-      "title": "Bigg Boss Season 20 Episode 75",
+      "title": "BBHin Day 74: Immunity with a Twist!",
       "season": 20,
       "episode": 75,
       "date": "19 Nov 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 75.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "duration": "1h 9m",
+      "description": "Arishfa calls out Gullu over ration usage, leading to a disagreement. Captain Uditi gets a special power to grant immunity, but BB brings a ‘Tathas-Two’ twist!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/6881/1795099856881-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -40,7 +40,7 @@
       },
       "HubCloud-stream": "b2rnn21mms1i9kg",
       "GDFlix-stream": "48Mly5vUqb4Y1Gu",
-      "hotstar_id": ""
+      "hotstar_id": "1271702374"
     },
     {
       "id": "bb-s20-e74",
@@ -2484,5 +2484,6 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ]
+  ],
+  "last_scraped_cycle": "2026-11-19"
 }
