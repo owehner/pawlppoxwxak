@@ -10,6 +10,39 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e77",
+      "title": "BBHin Day 76: Who Fails to Take a Stand?",
+      "season": 20,
+      "episode": 77,
+      "date": "21 Nov 2026",
+      "duration": "1h 10m",
+      "description": "Gharwaales question each other’s stance as influencers’ friends grill them through video messages. Meanwhile, Salman’s revelation puts Scout’s loyalty to Yung under scrutiny.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/1874/1795273051874-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "zofvv9ddub2ollb",
+          "GDFlix-stream": "owJWdBbfHBwtJhz"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "cydjrge3mfyskrc",
+          "GDFlix-stream": "DnL4lXzSXclwO2A"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "h0aw0rhrkkrkdkr",
+          "GDFlix-stream": "JBbTdhlacM96PQT"
+        }
+      },
+      "HubCloud-stream": "zofvv9ddub2ollb",
+      "GDFlix-stream": "owJWdBbfHBwtJhz",
+      "hotstar_id": "1271702376"
+    },
+    {
       "id": "bb-s20-e76",
       "title": "BBHin Day 75: Who’s the Ration Chor?",
       "season": 20,
@@ -2518,5 +2551,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-11-20"
+  "last_scraped_cycle": "2026-11-21"
 }
