@@ -10,6 +10,39 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e78",
+      "title": "Bigg Boss Season 20 Episode 78",
+      "season": 20,
+      "episode": 78,
+      "date": "22 Nov 2026",
+      "duration": "1h 30m",
+      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 78.",
+      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "tue2utlvl102qvq",
+          "GDFlix-stream": "5KxsoxRmmTv8VaV"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "ezasapsxzx84pgg",
+          "GDFlix-stream": "1FGKpMX7MawJ5uL"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "x8umxizupwbb6p5",
+          "GDFlix-stream": "o2HP0Ic4T2SqnFZ"
+        }
+      },
+      "HubCloud-stream": "tue2utlvl102qvq",
+      "GDFlix-stream": "5KxsoxRmmTv8VaV",
+      "hotstar_id": ""
+    },
+    {
       "id": "bb-s20-e77",
       "title": "BBHin Day 76: Who Fails to Take a Stand?",
       "season": 20,
@@ -2550,6 +2583,5 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ],
-  "last_scraped_cycle": "2026-11-21"
+  ]
 }
