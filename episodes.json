@@ -10,14 +10,47 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e79",
+      "title": "BBHin Day 78: Get Set for ‘The BB20 Show’",
+      "season": 20,
+      "episode": 79,
+      "date": "23 Nov 2026",
+      "duration": "1h 9m",
+      "description": "Gharwaales try to sort their differences post Weekend Ka Vaar. Uplifting everyone's mood, BB sets the stage for a special show, where the housemates deliver top-notch performances.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/4229/1795445914229-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "7hjano909wwmw7d",
+          "GDFlix-stream": "kOIG1iP4rq2IHFE"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "4puvuarau34uu7v",
+          "GDFlix-stream": "UXej0ZUSQPiBFES"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "arsukxrwxz7awvk",
+          "GDFlix-stream": "mRn7jPF7QGmZ5T1"
+        }
+      },
+      "HubCloud-stream": "7hjano909wwmw7d",
+      "GDFlix-stream": "kOIG1iP4rq2IHFE",
+      "hotstar_id": "1271702378"
+    },
+    {
       "id": "bb-s20-e78",
-      "title": "Bigg Boss Season 20 Episode 78",
+      "title": "BBHin Day 77: All Eyes on the Eviction Result",
       "season": 20,
       "episode": 78,
       "date": "22 Nov 2026",
-      "duration": "1h 30m",
-      "description": "Catch all the uncut drama, nominations, and weekend action of Bigg Boss Season 20 Episode 78.",
-      "thumbnail": "https://resizer-acm.eco.astro.com.my/tr:w-1920,q:75,f-webp/https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/10000381X990934.jpg",
+      "duration": "1h 10m",
+      "description": "Salman promises a fun-filled Sunday, where Gharwaales engage in masti and a bit of kalesh! Body language expert Kanan Tandi joins in while the house awaits the eviction verdict.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/4992/1795357374992-h",
       "qualities": {
         "1080p": {
           "label": "1080p FHD",
@@ -40,7 +73,7 @@
       },
       "HubCloud-stream": "tue2utlvl102qvq",
       "GDFlix-stream": "5KxsoxRmmTv8VaV",
-      "hotstar_id": ""
+      "hotstar_id": "1271702377"
     },
     {
       "id": "bb-s20-e77",
@@ -2583,5 +2616,6 @@
       "GDFlix-stream": "XDbwhxWGkCO79Ff",
       "hotstar_id": "1271696661"
     }
-  ]
+  ],
+  "last_scraped_cycle": "2026-11-23"
 }
