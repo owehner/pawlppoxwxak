@@ -10,6 +10,39 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e80",
+      "title": "BBHin Day 79: Clashes, Violation and Nominations",
+      "season": 20,
+      "episode": 80,
+      "date": "24 Nov 2026",
+      "duration": "1h 10m",
+      "description": "Love and Qazi clash while Scout's stand upsets Aamrapali and Yung. A rule break comes at a heavy cost. As the Gharwaales discuss nominations openly, who lands in the danger zone?",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/8757/1795528738757-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "rvbrs2ssfbrzrav",
+          "GDFlix-stream": "DAAbDD2k0S7NpJ5"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "99rgglok5rlhjgp",
+          "GDFlix-stream": "tlLUyhFPcNl7L3b"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "99rgglok5rlhjgp",
+          "GDFlix-stream": "rdAJW5lsnCygbhF"
+        }
+      },
+      "HubCloud-stream": "rvbrs2ssfbrzrav",
+      "GDFlix-stream": "DAAbDD2k0S7NpJ5",
+      "hotstar_id": "1271702379"
+    },
+    {
       "id": "bb-s20-e79",
       "title": "BBHin Day 78: Get Set for ‘The BB20 Show’",
       "season": 20,
@@ -2617,5 +2650,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-11-23"
+  "last_scraped_cycle": "2026-11-24"
 }
