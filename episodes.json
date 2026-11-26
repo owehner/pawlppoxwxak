@@ -10,6 +10,39 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e81",
+      "title": "BBHin Day 80: Har Chaal Pe Bawaal!",
+      "season": 20,
+      "episode": 81,
+      "date": "25 Nov 2026",
+      "duration": "1h 10m",
+      "description": "The nominations continue, and every housemate's move triggers an uproar! Further, Scout takes offence to Yung’s interruptions, leading to a heated confrontation.",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/7010/1795616817010-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "kjtxcvecpa8cmcx",
+          "GDFlix-stream": "bCAyPMszNvAqsF4"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "7im7zqme311q3kt",
+          "GDFlix-stream": "DY1jchjqJzeDORF"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "sth0tqzcdzcytcq",
+          "GDFlix-stream": "sumFelyWorOk9KI"
+        }
+      },
+      "HubCloud-stream": "kjtxcvecpa8cmcx",
+      "GDFlix-stream": "bCAyPMszNvAqsF4",
+      "hotstar_id": "1271702380"
+    },
+    {
       "id": "bb-s20-e80",
       "title": "BBHin Day 79: Clashes, Violation and Nominations",
       "season": 20,
@@ -2650,5 +2683,5 @@
       "hotstar_id": "1271696661"
     }
   ],
-  "last_scraped_cycle": "2026-11-24"
+  "last_scraped_cycle": "2026-11-26"
 }
