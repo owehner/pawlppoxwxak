@@ -10,6 +10,39 @@
   },
   "episodes": [
     {
+      "id": "bb-s20-e83",
+      "title": "BBHin Day 82: Level Up for Captaincy",
+      "season": 20,
+      "episode": 83,
+      "date": "27 Nov 2026",
+      "duration": "1h 15m",
+      "description": "The Muddes get bigger and so do the fights. Amid the heated Mahaul, the Gharwaales gear up to bag captaincy contendership in a high-stakes task. But it is not as easy as it seems!",
+      "thumbnail": "https://img10.hotstar.com/image/upload/f_auto,w_720,q_75/sources/r1/cms/prod/7292/1795788657292-h",
+      "qualities": {
+        "1080p": {
+          "label": "1080p FHD",
+          "size": "",
+          "HubCloud-stream": "tf1w2ftdjarj1ta",
+          "GDFlix-stream": "5flefnzeKRzzl7r"
+        },
+        "720p": {
+          "label": "720p HD",
+          "size": "",
+          "HubCloud-stream": "mqztzcpdzsj3ccc",
+          "GDFlix-stream": "i1YXoIl6KJpvOrP"
+        },
+        "480p": {
+          "label": "480p SD",
+          "size": "",
+          "HubCloud-stream": "tz3ymmo88fcozw8",
+          "GDFlix-stream": "zKhD7d4pfXTbqoI"
+        }
+      },
+      "HubCloud-stream": "tf1w2ftdjarj1ta",
+      "GDFlix-stream": "5flefnzeKRzzl7r",
+      "hotstar_id": "1271702382"
+    },
+    {
       "id": "bb-s20-e82",
       "title": "BBHin Day 81: Captain Calls the Shots",
       "season": 20,
